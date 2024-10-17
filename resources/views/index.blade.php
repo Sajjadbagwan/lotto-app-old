@@ -11,32 +11,26 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/jquery-ui.theme.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/slick.css') }}" />
         <link rel="stylesheet" href="{{ asset('scss/main.css') }}" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
         <!-- jQuery and other libraries -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 
     </head>
 
     <body>
         <div class="pageMain">
             <!-- Header Include -->
-            @include('template.header')
+            @include('template/header')
                 <main class="main">
                     <div class="container">
                         <div class="sectionHeader">
@@ -53,11 +47,9 @@
         </div>
 
     <!--Bootstrap jQuery-->
-    <script type="text/javascript" src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/slick.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/custom.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery-ui.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/moment.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/bootstrap-datetimepicker.js')}}"></script>
     <!-- Auto-hide Alert & Toast -->
 
