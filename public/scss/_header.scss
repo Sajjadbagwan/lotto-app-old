@@ -1,7 +1,7 @@
 .main-header {
-    background-color: $cream-color;
+    background-color: $white-color;
     padding-bottom: 4px;
-    padding: 10px 0;
+    padding: 0px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,66 +36,6 @@
     top: 10px;
     cursor: pointer;
 }
-
-.menu-block {
-    position: relative;
-
-    &.active {
-        .profileBox {
-            display: flex;
-        }
-    }
-
-    .profileBox {
-        position: absolute;
-        top: 55px;
-        right: 0;
-        background-color: $green-color;
-        padding: 20px;
-        width: 230px;
-        display: flex;
-        gap: 20px;
-        z-index: 22;
-        display: none;
-        transition: display 0.4s ease 0s;
-
-        &:after {
-            right: 10px;
-            content: "";
-            top: -10px;
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            position: absolute;
-            border-bottom: 10px solid $green-color;
-        }
-
-        .profileImg {
-            img {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-            }
-        }
-
-        .profileContent {
-
-            .profileLink {
-                text-decoration: none;
-                color: $white-color;
-                margin-bottom: 10px;
-                display: block;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-    }
-}
-
 .menuBtn {
     display: flex;
     gap: 10px;
@@ -114,12 +54,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 0px;
     padding-right: 40px;
     position: relative;
+    flex-direction: column;
+    background-color: $naveblue-color;
 
     @include media-breakpoint-min-xl {
         padding-right: 0;
+    }
+    .header-top-section{
+        width: 100%;
+        text-align: center;
+        padding-block: 20px;
+        background-color: $white-color;
+        img{
+            width: 151px;
+        }
+        .logo{
+            display: inline-block;
+        }
     }
 }
 
@@ -206,11 +160,11 @@
             &.has-sub {
                 >.submenu {
                     position: absolute;
-                    top: 60px;
+                    top: 68px;
                     padding: 6px 0 15px;
                     text-align: center;
                     width: 100%;
-                    background-color: $sidebar-bg;
+                    background-color: $naveblue-color;
                     transition: all 0.5s ease 0s;
                     display: none;
                     z-index: 444;
@@ -221,7 +175,7 @@
                         >a {
                             padding: 10px;
                             text-decoration: none;
-                            color: $body-color;
+                            color: $white-color;
                             display: block;
                             @extend %fontsize16;
 
@@ -241,7 +195,7 @@
                                 li {
                                     a {
                                         text-decoration: none;
-                                        color: $body-color;
+                                        color: $white-color;
                                         display: block;
                                         @extend %fontsize16;
                                     }
@@ -285,7 +239,7 @@
 
                     &:after {
                         content: "";
-                        border: solid $green-color;
+                        border: solid $white-color;
                         width: 0;
                         height: 0;
                         border-width: 0 2px 2px 0;
@@ -330,7 +284,7 @@
         right: auto !important;
         max-width: none;
         background-color: transparent;
-        max-width: 1250px;
+        max-width: 1640px;
         overflow-y: unset;
 
 
@@ -341,14 +295,10 @@
             width: 100%;
 
             >li {
-                padding: 25px 30px 25px 0;
-
-                &:last-child {
-                    padding-right: 0;
-                }
+                padding: 21px 30px 21px 0;
 
                 >a {
-                    color: $green-color;
+                    color: $white-color;
                     border: none;
                     padding: 0;
 
@@ -364,7 +314,7 @@
 
                 &.has-sub {
                     .arrow {
-                        top: 19px;
+                        top: 16px;
                         right: 0;
                     }
 
@@ -372,7 +322,7 @@
                         width: 320px;
                         padding: 20px 0;
                         max-height: 600px;
-                        overflow-y: auto;
+                        // overflow-y: auto;
                        
 
                         /* width */
@@ -407,6 +357,7 @@
 
                                     &:after {
                                         transform: rotate(-48deg) translateY(-50%);
+                                        
 
                                     }
                                 }
@@ -415,6 +366,7 @@
                                     .arrow {
                                         &::after {
                                             border-color: $white-color;
+                                            border-color: $naveblue-color !important;
                                         }
                                     }
 
@@ -428,17 +380,17 @@
                                     width: 250px;
                                     right: -250px;
                                     top: 0;
-                                    background: $sidebar-bg;
+                                    background: $naveblue-color;
                                     padding: 10px 0;
 
                                     >li {
                                         padding: 6px 20px;
 
                                         &:hover {
-                                            background-color: $green-color;
+                                            background-color: $white-color;
 
                                             >a {
-                                                color: $white-color;
+                                                color: $naveblue-color;
                                             }
                                         }
                                     }
@@ -446,10 +398,10 @@
                             }
 
                             &:hover {
-                                background-color: $green-color;
+                                background-color: $white-color;
 
                                 >a {
-                                    color: $white-color;
+                                    color: $naveblue-color;
                                 }
                             }
 
