@@ -30,7 +30,7 @@
     <body>
         <div class="pageMain">
             <!-- Header Include -->
-            @include('template/header')
+            @include(view: 'template/header')
                 <main class="main">
                     <div class="container">
                         <div class="sectionHeader">
