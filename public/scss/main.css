@@ -176,6 +176,22 @@ p {
   color: #20535a;
   min-width: 120px;
 }
+.allBtn.dark {
+  background-color: #2D3E50;
+  color: #ffffff;
+  border: solid 1px #2D3E50;
+}
+.allBtn.dark:hover {
+  background-color: #ffffff;
+  color: #2D3E50;
+}
+@media (min-width: 991px) {
+  .allBtn {
+    min-height: 55px;
+    min-width: 120px;
+    font-size: 13px;
+  }
+}
 .allBtn + .allBtn {
   margin-top: 15px;
 }
@@ -228,25 +244,9 @@ p {
   background-color: #ffffff;
   color: #20535a;
 }
-@media (min-width: 991px) {
-  .allBtn {
-    min-height: 55px;
-    min-width: 200px;
-    font-size: 13px;
-  }
-}
 .allBtn:hover {
   background-color: #20535a;
   color: #ffffff;
-}
-.allBtn.dark {
-  background-color: #20535a;
-  color: #ffffff;
-  border: solid 1px #20535a;
-}
-.allBtn.dark:hover {
-  background-color: #ffffff;
-  color: #20535a;
 }
 .allBtn.redBtn {
   background-color: #BE1600;
@@ -284,7 +284,7 @@ p {
   background-color: #ffffff;
   padding-bottom: 4px;
   padding: 0px;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 22;
@@ -780,4 +780,58 @@ p {
   .copyInfoGrid .copyInfo p {
     text-align: right;
   }
+}
+
+.lotry-form-main-wrap {
+  max-width: 650px;
+  margin: auto;
+  margin-block: 100px;
+}
+.lotry-form-main-wrap form {
+  border: 2px solid #2D3E50;
+  padding: 30px 25px;
+}
+.lotry-form-main-wrap form select, .lotry-form-main-wrap form input, .lotry-form-main-wrap form textarea {
+  width: 50%;
+  display: block;
+  padding: 9px;
+  border: 1px solid #2D3E50;
+}
+.lotry-form-main-wrap form select {
+  cursor: pointer;
+}
+.lotry-form-main-wrap form textarea {
+  resize: none;
+  min-height: 100px;
+  overflow-y: auto;
+}
+.lotry-form-main-wrap form .customFormWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.lotry-form-main-wrap form .customFormWrap label.customFormLabel {
+  max-width: 300px;
+  width: 100%;
+  display: inline-block;
+}
+.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row input {
+  width: auto;
+}
+.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-sub-row {
+  margin-left: 60px;
+}
+.lotry-form-main-wrap form .button-group-row {
+  text-align: right;
+}
+.lotry-form-main-wrap form h2 {
+  margin-block: 10px 10px;
+  font-size: 18px;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

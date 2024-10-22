@@ -139,6 +139,24 @@ p {
   color: $green-color;
   min-width: 120px;
 
+  &.dark {
+    background-color: $naveblue-color;
+    color: $white-color;
+    border: solid 1px $naveblue-color;
+
+    &:hover {
+      background-color: $white-color;
+      color: $naveblue-color;
+    }
+  }
+
+  @include media-breakpoint-min-lg {
+    min-height: 55px;
+    min-width: 120px;
+    font-size: 13px;
+  }
+
+
   &+.allBtn {
     margin-top: 15px;
   }
@@ -204,27 +222,13 @@ p {
     }
   }
 
-  @include media-breakpoint-min-lg {
-    min-height: 55px;
-    min-width: 200px;
-    font-size: 13px;
-  }
+ 
 
   &:hover {
     background-color: $green-color;
     color: $white-color;
   }
 
-  &.dark {
-    background-color: $green-color;
-    color: $white-color;
-    border: solid 1px $green-color;
-
-    &:hover {
-      background-color: $white-color;
-      color: $green-color;
-    }
-  }
 
   &.redBtn {
     background-color: $red-color;

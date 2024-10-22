@@ -1,0 +1,57 @@
+.lotry-form-main-wrap{
+    max-width: 650px;
+    margin: auto;
+    margin-block: 100px;
+    form{
+        border: 2px solid  $naveblue-color;
+        padding: 30px 25px;
+        select, input, textarea {
+            width: 50%;
+            display: block;
+            padding: 9px;
+            border: 1px solid $naveblue-color;
+        }
+        select{
+            cursor: pointer;
+        }
+        textarea{
+            resize: none;
+            min-height: 100px;
+            overflow-y: auto;
+        }
+        .customFormWrap{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            label{
+                &.customFormLabel{
+                    max-width: 300px;
+                    width: 100%;
+                    display: inline-block;
+                }
+            }
+            .radio-button-row{
+                .radio-row{
+                    display: flex;
+                    align-items: baseline;
+                    gap: 10px;
+                    input{
+                        width: auto;
+                    }
+                }
+                .radio-sub-row{
+                    margin-left: 60px;
+                }
+            }
+        }
+        .button-group-row{
+            text-align: right;
+        }
+        h2{
+            margin-block: 10px 10px;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+    }
+}
