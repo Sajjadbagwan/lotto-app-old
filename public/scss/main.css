@@ -58,7 +58,7 @@ h4 {
   Body
  ***************************************************************************/
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333333;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -783,19 +783,19 @@ p {
 }
 
 .lotry-form-main-wrap {
-  max-width: 650px;
-  margin: auto;
   margin-block: 100px;
 }
 .lotry-form-main-wrap form {
-  border: 2px solid #2D3E50;
+  border: 1px solid #2D3E50;
   padding: 30px 25px;
+  border-radius: 5px;
 }
 .lotry-form-main-wrap form select, .lotry-form-main-wrap form input, .lotry-form-main-wrap form textarea {
-  width: 50%;
+  width: 100%;
   display: block;
-  padding: 9px;
+  padding: 15px;
   border: 1px solid #2D3E50;
+  border-radius: 5px;
 }
 .lotry-form-main-wrap form select {
   cursor: pointer;
@@ -815,17 +815,23 @@ p {
   max-width: 300px;
   width: 100%;
   display: inline-block;
+  font-weight: 500;
 }
 .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row {
   display: flex;
   align-items: baseline;
   gap: 10px;
+  cursor: pointer;
 }
 .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row input {
   width: auto;
 }
+.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row label {
+  cursor: pointer;
+}
 .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-sub-row {
   margin-left: 60px;
+  margin-top: 5px;
 }
 .lotry-form-main-wrap form .button-group-row {
   text-align: right;
