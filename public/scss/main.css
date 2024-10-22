@@ -57,6 +57,10 @@ h4 {
 /****************************************************************************
   Body
  ***************************************************************************/
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
@@ -74,7 +78,7 @@ body::-webkit-scrollbar-track {
   background: #e6e2df;
 }
 body::-webkit-scrollbar-thumb {
-  background: #20535a;
+  background: #2D3E50;
 }
 
 * {
@@ -190,6 +194,11 @@ p {
     min-height: 55px;
     min-width: 120px;
     font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .allBtn {
+    min-width: 100px;
   }
 }
 .allBtn + .allBtn {
@@ -339,6 +348,11 @@ p {
     padding-right: 0;
   }
 }
+@media (max-width: 1200px) {
+  .headerMenuOuter {
+    padding-right: 0;
+  }
+}
 .headerMenuOuter .header-top-section {
   width: 100%;
   text-align: center;
@@ -355,7 +369,7 @@ p {
 .menuTigger {
   width: 22px;
   display: block;
-  right: 0;
+  right: 15px;
   top: 20px;
   position: absolute;
   cursor: pointer;
@@ -366,7 +380,7 @@ p {
   height: 2px;
   margin: 0 auto 5px;
   width: 100%;
-  background-color: #20535a;
+  background-color: #2D3E50;
   transition: all 0.3s ease 0s;
 }
 .menuTigger .bar:last-child {
@@ -380,21 +394,25 @@ p {
 
 .menu--open .menuTigger .bar:first-child {
   transform: translateY(7px) rotate(139deg);
+  background-color: #ffffff;
 }
 .menu--open .menuTigger .bar:last-child {
   transform: translateY(-7px) rotate(-140deg);
+  background-color: #ffffff;
 }
 .menu--open .menuTigger .bar:nth-child(2) {
   transform: scale(0);
+  background-color: #ffffff;
 }
 .menu--open .header-menu {
   right: 0;
+  padding: 0;
 }
 
 .header-menu {
   position: fixed;
   top: 0;
-  background-color: #E1E3E4;
+  background-color: #2D3E50;
   width: 100%;
   max-width: 320px;
   right: -350px;
@@ -404,16 +422,21 @@ p {
   height: 100%;
   overflow-y: auto;
 }
+@media (max-width: 1600px) {
+  .header-menu {
+    padding-inline: 30px;
+  }
+}
 .header-menu > ul > li {
   position: relative;
 }
 .header-menu > ul > li > a {
-  border-bottom: solid 1px #4d4d4f;
+  border-bottom: solid 1px #ffffff;
   color: #4d4d4f;
   padding: 17px 10px 17px 25px;
   display: block;
   text-decoration: none;
-  color: #4d4d4f;
+  color: #ffffff;
 }
 .header-menu > ul > li.has-sub > .submenu {
   position: absolute;
@@ -649,6 +672,7 @@ p {
   font-family: "Open Sans", sans-serif;
   position: relative;
   cursor: pointer;
+  color: #2D3E50;
 }
 .footerBlockGrid .footerBlock h3:after {
   content: "+";
@@ -688,6 +712,7 @@ p {
 }
 .footerBlockGrid .footerBlock ul li a {
   text-decoration: none;
+  color: #2D3E50;
 }
 .footerBlockGrid .footerBlock ul li a:hover {
   text-decoration: underline;
@@ -739,6 +764,10 @@ p {
     margin-bottom: 0;
   }
 }
+.footerLogo .logo img {
+  max-width: 300px;
+  width: 100%;
+}
 
 .footerBottom {
   position: relative;
@@ -783,7 +812,7 @@ p {
 }
 
 .lotry-form-main-wrap {
-  margin-block: 100px;
+  margin-block: 50px 100px;
 }
 .lotry-form-main-wrap form {
   border: 1px solid #2D3E50;
@@ -796,6 +825,7 @@ p {
   padding: 15px;
   border: 1px solid #2D3E50;
   border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 .lotry-form-main-wrap form select {
   cursor: pointer;
@@ -811,11 +841,22 @@ p {
   justify-content: space-between;
   padding-bottom: 15px;
 }
+@media (max-width: 767px) {
+  .lotry-form-main-wrap form .customFormWrap {
+    flex-direction: column;
+  }
+}
 .lotry-form-main-wrap form .customFormWrap label.customFormLabel {
   max-width: 300px;
   width: 100%;
   display: inline-block;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .lotry-form-main-wrap form .customFormWrap label.customFormLabel {
+    padding-bottom: 6px;
+    max-width: 100%;
+  }
 }
 .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row {
   display: flex;
@@ -833,11 +874,16 @@ p {
   margin-left: 60px;
   margin-top: 5px;
 }
+@media (max-width: 480px) {
+  .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-sub-row {
+    margin-left: 35px;
+  }
+}
 .lotry-form-main-wrap form .button-group-row {
   text-align: right;
 }
 .lotry-form-main-wrap form h2 {
   margin-block: 10px 10px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

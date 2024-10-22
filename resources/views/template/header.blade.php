@@ -51,7 +51,7 @@
                         <ul class="submenu">
                             <li class="active"><a href="#">Your Details</a></li>
                             <li><a href="#">Your Details</a></li>
-                            <li><a href="#">Your Details    </a></li>
+                            <li><a href="#">Logout</a></li>
                         </ul>
                     </li>
                     <!-- <li><a href="{{ route('login') }}">Log Out</a></li> -->

@@ -4,7 +4,9 @@
             <div class="footerBlockGrid">
                 <div class="footerBlock">
                     <div class="footerLogo">
-                    <img  src="{{ asset('images/footer-logo.png') }}" alt="logo">
+                        <a href="#" class="logo">
+                            <img src="{{ asset('images/logo.svg') }}" alt="logo">
+                        </a>
                     </div>
                 </div>
                 <div class="footerBlock">
@@ -17,12 +19,12 @@
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Journals</a></li>
                     </ul>
-                    <div class="footerSocial desktop">
+                    <!-- <div class="footerSocial desktop">
                         <ul>
                             <li><a href="#"><img src="{{ asset('images/pinterest.svg') }}" alt="pintrest"></a></li>
                             <li><a href="#"><img src="{{ asset('images/instagram.svg') }}" alt="instagram"></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footerBlock">
                     <h3>Customer Care</h3>
@@ -32,12 +34,12 @@
                         <li><a href="#">Legal</a></li>
                         <li><a href="#">FAQs</a></li>
                     </ul>
-                    <div class="footerSocial mobile">
+                    <!-- <div class="footerSocial mobile">
                         <ul>
                             <li><a href="#"><img src="{{ asset('images/pinterest.svg') }}" alt="pintrest"></a></li>
                             <li><a href="#"><img src="{{ asset('images/instagram.svg') }}" alt="instagram"></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
               
             </div>

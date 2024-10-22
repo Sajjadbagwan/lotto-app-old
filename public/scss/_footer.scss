@@ -44,6 +44,7 @@
             font-family: $font-secondary;
             position: relative;
             cursor: pointer;
+            color: $naveblue-color;
          
             &:after {
                 content: "+";
@@ -89,6 +90,7 @@
 
                 a {
                     text-decoration: none;
+                    color: $naveblue-color;
 
                     &:hover {
                         text-decoration: underline;
@@ -146,6 +148,12 @@
 
     @include media-breakpoint-min-lg {
         margin-bottom: 0;
+    }
+    .logo{
+        img{
+            max-width: 300px;
+            width: 100%;
+        }
     }
 }
 

@@ -2,6 +2,9 @@
   Body
  ***************************************************************************/
 
+ * {
+  box-sizing: border-box;
+}
 
 body {
   @extend %fontsize16;
@@ -23,7 +26,7 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: $green-color
+    background: $naveblue-color;
   }
 }
 
@@ -156,6 +159,9 @@ p {
     font-size: 13px;
   }
 
+  @include media-breakpoint-sm{
+    min-width: 100px;
+  }
 
   &+.allBtn {
     margin-top: 15px;

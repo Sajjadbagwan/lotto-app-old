@@ -1,5 +1,5 @@
 .lotry-form-main-wrap{
-    margin-block: 100px;
+    margin-block: 50px 100px;
     form{
         border: 1px solid  $naveblue-color;
         padding: 30px 25px;
@@ -10,6 +10,7 @@
             padding: 15px;
             border: 1px solid $naveblue-color;
             border-radius: 5px;
+            font-family:  $font-secondary;
         }
         select{
             cursor: pointer;
@@ -24,12 +25,20 @@
             align-items: center;
             justify-content: space-between;
             padding-bottom: 15px;
+
+            @include media-breakpoint-md{
+                flex-direction: column;
+            }
             label{
                 &.customFormLabel{
                     max-width: 300px;
                     width: 100%;
                     display: inline-block;
                     font-weight: $medium-weight;
+                    @include media-breakpoint-md{
+                        padding-bottom: 6px;
+                        max-width: 100%;
+                    }
                 }
             }
             .radio-button-row{
@@ -48,6 +57,9 @@
                 .radio-sub-row{
                     margin-left: 60px;
                     margin-top: 5px;
+                    @include media-breakpoint-sm{
+                        margin-left: 35px;
+                      }
                 }
             }
         }
@@ -56,7 +68,7 @@
         }
         h2{
             margin-block: 10px 10px;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: capitalize;
         }
     }
