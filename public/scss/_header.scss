@@ -111,6 +111,9 @@
 
 .menu--open {
     .menuTigger {
+        @include media-breakpoint-x-lg {
+            position: fixed;
+        }
         .bar {
             &:first-child {
                 -webkit-transform: translateY(7px) rotate(139deg);
@@ -135,6 +138,7 @@
     .header-menu {
         right: 0;
         padding: 0;
+        padding-top: 61px !important;
     }
 }
 
@@ -158,6 +162,13 @@
         >li {
             position: relative;
 
+        @include media-breakpoint-x-lg {
+            &:first-child {
+               a{
+                border-top: solid 1px $white-color;
+               }
+            }
+        }
             >a {
                 border-bottom: solid 1px $white-color;
                 color: $black-color;
@@ -266,7 +277,7 @@
                 }
 
                 &.active {
-                    background-color: $green-color;
+                    background-color: $naveblue-color;
 
                     >a {
                         color: $white-color;
@@ -349,7 +360,7 @@
 
                         /* Handle */
                         &::-webkit-scrollbar-thumb {
-                            background: $green-color
+                            background: $naveblue-color;
                         }
 
                         >li {

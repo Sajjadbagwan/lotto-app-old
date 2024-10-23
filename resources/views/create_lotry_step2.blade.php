@@ -7,78 +7,101 @@
 <!--start content section-->
 @section('content')
 
-<section class="lotry-form-main-wrap">
+<section class="lotry-form-main-wrap lotry-step-2-form-box">
     <div class="container">
-        <h2>Entry Settings</h2>
+        
         <div class="">
             <form action="">
+            <h2 class="form-title">Entry Settings</h2>
                 <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="userfname">Type</label>
+                    <label class="customFormLabel" for="Selectionrange">Selection range</label>
+                    <div class="input-range-box">
+                        <div class="from-range-box">
+                            <span class="prize-title">From</span>
+                            <input type="number" id="minrange" name="minrange" min="0" max="99">
+                        </div>
+                        <div class="from-range-box">
+                            <span class="prize-title">To</span>
+                            <input type="number" id="maxrange" name="maxrange" min="0" max="99">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customFormWrap inlineField">
+                    <label class="customFormLabel" for="amountselection">Amount of Selections</label>
+                    <input type="number" id="amountselection" name="amountselection" min="0" max="6">
+                </div>
+
+                <div class="customFormWrap inlineField">
+                    <label class="customFormLabel" for="">Separated by</label>
                     <select name="" id="type" class="form-select">
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="separatoption1">Separat option1</option>
+                        <option value="separatoption2">Separat option2</option>
+                        <option value="separatoption3">Separat option3</option>
                     </select>
                 </div>
 
-                <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="lotteryname">Lottery Name</label>
-                    <input type="text" id="lotteryname" name="" value="" class="form-control">
+                <div class="customFormWrap inlineField example-row">
+                    <label class="customFormLabel" for="amountselection">Example</label>
+                    <div class="">4-5-8-7-2-2</div>
                 </div>
-
-                <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="">Description</label>
-                    <textarea name="" id=""
-                        class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt</textarea>
-                </div>
-
-                <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="">Default Entry Fee</label>
-                    <input type="number" id="" name="" value="" class="form-control">
-                </div>
-
-                <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="">Repetion</label>
-                    <select name="" id="type" class="form-select">
-                        <option value="United Kingdom">one-off</option>
-                        <option value="United Kingdom">Weekly</option>
-                        <option value="United Kingdom">etc</option>
-                    </select>
-                </div>
-
-                <div class="customFormWrap inlineField">
-                    <label for="" class="customFormLabel">First Draw</label>
-                    <input type="date" id="" name="">
-                </div>
-
-                <div class="customFormWrap inlineField">
-                    <label class="customFormLabel" for="">First Draw's ID</label>
-                    <input type="text" id="" name="" value="" class="form-control">
-                </div>
-                <h2>Prize Award Style</h2>
+                
+                <h2>Options</h2>
                 <div class="customFormWrap inlineField">
                     <div class="radio-button-row">
                         <div class="radio-row">
-                            <input type="radio" id="radio1" name="radio-button" value="radio1">
-                            <label for="radio1">Guaranteed winners-system will select a fixed number of winners.</label>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                            <label for="checkbox1">Selected digits in Entry number must be unique</label>
                         </div>
                         <div class="radio-row">
-                            <input type="radio" id="radio2" name="radio-button" value="radio2">
-                            <label for="radio2">Chance of winning-winning combination detemines winners based on matching
-                                the
-                                combination.</label>
+                            <input type="checkbox" id="checkbox2" name="checkbox2" value="">
+                            <label for="checkbox2">Order digits (oscending)</label>
                         </div>
-                        <div class="radio-sub-row">
-                            <div class="radio-row">
-                                <input type="radio" id="radio3" name="radio-button" value="radio3">
-                                <label for="radio3">Automatic System RNG</label>
-                            </div>
-                            <div class="radio-row">
-                                <input type="radio" id="radio4" name="radio-button" value="radio4">
-                                <label for="radio4"> Manual Combination Entry</label>
-                            </div>
+                        <div class="radio-row">
+                            <input type="checkbox" id="checkbox3" name="checkbox3" value="">
+                            <label for="checkbox3">Entries must be unique l.e, no two players can have the same Entry
+                                number.</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="checkbox" id="checkbox4" name="checkbox4" value="">
+                            <label for="checkbox4">Entries can only win one prize per draw.</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="checkbox" id="checkbox5" name="checkbox5" value="">
+                            <label for="checkbox5">Automatically Run Draw (only available with RNG)</label>
                         </div>
                     </div>
+                </div>
+                <div class="customFormWrap inlineField">
+                    <label class="customFormLabel" for="">Draw Time</label>
+                    <input type="time" id="timepicker" name="timepicker">
+                </div>
+                <h3>Lock and Upload Entries</h3>
+                <div class="customFormWrap inlineField">
+                    <div class="input-range-box entries-box-row">
+                        <div class="entries-box">
+                            <span>Lock Entries</span>
+                            <input type="number" id="minrange" name="minrange" min="0">
+                        </div>
+                        <div class="entries-box">
+                            <select name="" id="type" class="form-select">
+                                <option value="United Kingdom">Minutes</option>
+                                <option value="United Kingdom">Hours</option>
+                                <option value="United Kingdom">Days</option>
+                            </select>
+                            <span>before draw</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customFormWrap inlineField">
+                    <label for="" class="customFormLabel">Upload Entries to:</label>
+                    <input type="text" id="" name="" value="" class="form-control">
+                </div>
+
+                <div class="customFormWrap inlineField">
+                    <label for="" class="customFormLabel">Notify:</label>
+                    <input type="text" id="" name="" value="" class="form-control">
                 </div>
                 <div class="button-group-row">
                     <button type="button" class="allBtn dark">Back</button>

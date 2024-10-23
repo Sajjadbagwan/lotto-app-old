@@ -1,0 +1,43 @@
+.lotry-step-4-form-box{
+.win-setting-box{
+    .win-setting-radio-btn{
+        margin-bottom: 25px;
+    }
+    h2{
+        margin-top: 15px;
+    }
+}
+.fix-prizes-box{
+    .customFormWrap {
+        .row{
+            &:last-child {
+              @include media-breakpoint-md {
+                display: flex;
+                justify-content: space-between;
+            }
+                .radio-row{
+                    justify-content: center;
+                }
+            }
+            input[type="checkbox"]{
+                cursor: pointer;
+                margin: 0;
+                margin-left: -15px;
+            }
+        }
+    }
+}
+.flex-column{
+    flex-direction: column;
+}
+.rollover-bt-space{
+    margin-bottom: 15px;
+}
+.example-row{
+    .prize-title{
+        @include media-breakpoint-md {
+            width: 100%;
+        }
+    }
+}
+}

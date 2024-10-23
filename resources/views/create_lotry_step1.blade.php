@@ -10,9 +10,9 @@
 
 <section class="lotry-form-main-wrap">
     <div class="container">
-        <h2>Create New Lottery</h2>
         <div class="">
             <form action="">
+            <h2 class="form-title">Create New Lottery</h2>
                 <div class="customFormWrap inlineField">
                     <label class="customFormLabel" for="userfname">Type</label>
                     <select name="" id="type" class="form-select">

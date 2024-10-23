@@ -53,7 +53,6 @@ h2 {
   @extend %fontsize30;
   margin: 0 0 20px 0;
   font-weight: 500;
-  letter-spacing: 1px;
 
 }
 
@@ -61,7 +60,7 @@ h3 {
   @extend %fontsize25;
   margin: 0 0 15px 0;
   font-weight: 500;
-  color: $green-color;
+  color: $naveblue-color;
   font-family: $font-secondary;
 
   @include media-breakpoint-min-x-lg {
@@ -89,22 +88,18 @@ ol {
 }
 
 a {
-  color: $green-color;
+  color: $naveblue-color;
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease 0s;
   text-underline-offset: 3px;
 
   &:hover {
-    color: $green-color;
+    color: $naveblue-color;
     text-decoration: none;
 
   }
 }
-
-
-
-
 
 p {
   margin: 0 0 15px 0;
@@ -128,18 +123,13 @@ p {
   text-align: center;
   padding: 11px 20px 11px;
   display: inline-block;
-  background-color: $white-color;
   text-decoration: none;
   font-weight: $bold-weight;
   text-transform: uppercase;
-  font-size: 12px;
-  min-height: 50px;
   border-radius: 0;
   cursor: pointer;
-  border: solid 1px $green-color;
   font-family: $font-primary;
   transition: all 0.2s ease 0s;
-  color: $green-color;
   min-width: 120px;
 
   &.dark {
@@ -162,125 +152,8 @@ p {
   @include media-breakpoint-sm{
     min-width: 100px;
   }
-
-  &+.allBtn {
-    margin-top: 15px;
-  }
-
-  &.initApproveBtn {
-    background-color: $light-Blue;
-    border-color: $light-Blue;
-
-    &:hover {
-      background-color: $white-color;
-      color: $green-color;
-    }
-  }
-
-  &.fullApproveBtn {
-    background-color: $light-blue2;
-    border-color: $light-blue2;
-
-    &:hover {
-      background-color: $white-color;
-      color: $light-blue2;
-    }
-  }
-
-  &.incompleteBtn {
-    background-color: $red-bg;
-    border-color: $red-bg;
-
-    &:hover {
-      background-color: $white-color;
-      color: $red-bg;
-    }
-  }
-
-  &.declineBtn {
-    background-color: $light-pink;
-    border-color: $light-pink;
-
-    &:hover {
-      background-color: $white-color;
-      color: $light-pink;
-    }
-  }
-
-  &.inactiveBtn {
-    background-color: $grey-color;
-    border-color: $grey-color;
-    color: $white-color;
-
-    &:hover {
-      background-color: $white-color;
-      color: $grey-color;
-    }
-  }
-
-  &.activeBtn {
-    background-color: $green-bg;
-    border-color: $green-bg;
-
-    &:hover {
-      background-color: $white-color;
-      color: $green-color;
-    }
-  }
-
- 
-
-  &:hover {
-    background-color: $green-color;
-    color: $white-color;
-  }
-
-
-  &.redBtn {
-    background-color: $red-color;
-    border-color: $red-color;
-    color: $white-color;
-
-    &:hover {
-      background-color: $white-color;
-      color: $red-color;
-    }
-  }
-
-  &.border {
-    border: 1px solid;
-  }
-
-  &.btnIcon {
-    &.userBtn {
-      svg {
-        width: 14px;
-      }
-    }
-
-    svg,img {
-      margin-right: 8px;
-    }
-
-    &:hover {
-      svg {
-        fill: $green-color;
-
-        g,
-        path {
-          stroke: $green-color;
-        }
-      }
-    }
-
-    &.backBtn {
-      svg {
-        width: 10px;
-        height: 12px;
-        margin-top: -2px;
-        margin-right: 5px;
-      }
-    }
-  }
 }
 
+.prize-title{
+  font-weight:$medium-weight;
+}

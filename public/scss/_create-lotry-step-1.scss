@@ -1,5 +1,8 @@
 .lotry-form-main-wrap{
     margin-block: 50px 100px;
+    @include media-breakpoint-md{
+        margin-block: 30px 80px;
+    }
     form{
         border: 1px solid  $naveblue-color;
         padding: 30px 25px;
@@ -70,6 +73,12 @@
             margin-block: 10px 10px;
             font-size: 16px;
             text-transform: capitalize;
+        }
+        .form-title{
+            font-size: 30px;
+            line-height: 40px;
+            margin-top: 0;
+            margin-bottom: 30px;
         }
     }
 }

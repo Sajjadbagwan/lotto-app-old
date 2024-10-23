@@ -153,6 +153,9 @@
         img{
             max-width: 300px;
             width: 100%;
+            @include media-breakpoint-md{
+                max-width: 250px;
+            }
         }
     }
 }
