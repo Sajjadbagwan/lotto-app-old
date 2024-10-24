@@ -25,7 +25,6 @@
             input[type="checkbox"]{
                 cursor: pointer;
                 margin: 0;
-                margin-left: -15px;
             }
         }
     }
@@ -41,6 +40,11 @@
         @include media-breakpoint-md {
             width: 100%;
         }
+    }
+}
+.checkbox-button-row{
+    label{
+        margin-left: -15px;
     }
 }
 }

@@ -1136,7 +1136,6 @@ p {
 .lotry-step-4-form-box .fix-prizes-box .customFormWrap .row input[type=checkbox] {
   cursor: pointer;
   margin: 0;
-  margin-left: -15px;
 }
 .lotry-step-4-form-box .flex-column {
   flex-direction: column;
@@ -1148,6 +1147,9 @@ p {
   .lotry-step-4-form-box .example-row .prize-title {
     width: 100%;
   }
+}
+.lotry-step-4-form-box .checkbox-button-row label {
+  margin-left: -15px;
 }
 
 .body-sign {

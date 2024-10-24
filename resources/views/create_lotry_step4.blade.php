@@ -73,10 +73,11 @@
                                         <span>Prize</span>
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
                                     </div>
-                                    <div class="row">
+                                    <div class="row checkbox-button-row">
                                         <span>Insured</span>
                                         <div class="radio-row">
                                             <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                                            <label for="checkbox1"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -100,10 +101,11 @@
                                         <span>Prize</span>
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
                                     </div>
-                                    <div class="row">
+                                    <div class="row checkbox-button-row">
                                         <span>Insured</span>
                                         <div class="radio-row">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                                            <input type="checkbox" id="checkbox2" name="checkbox2" value="">
+                                            <label for="checkbox2"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -127,10 +129,11 @@
                                         <span>Prize</span>
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
                                     </div>
-                                    <div class="row">
+                                    <div class="row checkbox-button-row">
                                         <span>Insured</span>
                                         <div class="radio-row">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                                            <input type="checkbox" id="checkbox3" name="checkbox3" value="">
+                                            <label for="checkbox3"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -154,10 +157,11 @@
                                         <span>Prize</span>
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
                                     </div>
-                                    <div class="row">
+                                    <div class="row checkbox-button-row">
                                         <span>Insured</span>
                                         <div class="radio-row">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                                            <input type="checkbox" id="checkbox4" name="checkbox4" value="">
+                                            <label for="checkbox4"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -181,10 +185,11 @@
                                         <span>Prize</span>
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
                                     </div>
-                                    <div class="row">
+                                    <div class="row checkbox-button-row">
                                         <span>Insured</span>
                                         <div class="radio-row">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" value="">
+                                            <input type="checkbox" id="checkbox5" name="checkbox5" value="">
+                                            <label for="checkbox5"></label>
                                         </div>
                                     </div>
                                 </div>
