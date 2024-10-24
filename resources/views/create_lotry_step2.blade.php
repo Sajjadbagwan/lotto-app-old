@@ -105,8 +105,10 @@
                     <input type="text" id="" name="" value="" class="form-control">
                 </div>
                 <div class="button-group-row">
-                    <button type="button" class="allBtn dark">Back</button>
-                    <button type="button" class="allBtn dark">Next</button>
+                <a href="create_lotry_step1">Back</a>
+                <a href="create_lotry_step3">Next</a>
+                        <!-- <button type="button" class="allBtn dark">Back</button>
+                        <button type="button" class="allBtn dark">Next</button> -->
                 </div>
                 </div>
             </form>

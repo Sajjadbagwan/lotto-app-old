@@ -85,8 +85,10 @@
                         </div>
                     </div>
                     <div class="button-group-row">
-                        <button type="button" class="allBtn dark">Back</button>
-                        <button type="button" class="allBtn dark">Next</button>
+                        <a href="#">Back</a>
+                        <a href="create_lotry_step2">Next</a>
+                        <!-- <button type="button" class="allBtn dark">Back</button>
+                        <button type="button" class="allBtn dark">Next</button> -->
                     </div>
                 </div>
             </form>
