@@ -229,8 +229,8 @@
                     </div>
                 </div>
                 <div class="button-group-row">
-                <a href="create_lotry_step3">Back</a>
-                <a href="#">Next</a>
+                <a href="create_lotry_step3" class="allBtn dark">Back</a>
+                <a href="#" class="allBtn dark">Next</a>
                         <!-- <button type="button" class="allBtn dark">Back</button>
                         <button type="button" class="allBtn dark">Next</button> -->
                 </div>
