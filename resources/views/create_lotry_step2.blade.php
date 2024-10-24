@@ -13,6 +13,7 @@
         <div class="">
             <form action="">
             <h2 class="form-title">Entry Settings</h2>
+            <div class="form-inner-body">
                 <div class="customFormWrap inlineField">
                     <label class="customFormLabel" for="Selectionrange">Selection range</label>
                     <div class="input-range-box">
@@ -48,7 +49,7 @@
                 
                 <h2>Options</h2>
                 <div class="customFormWrap inlineField">
-                    <div class="radio-button-row">
+                    <div class="radio-button-row checkbox-button-row">
                         <div class="radio-row">
                             <input type="checkbox" id="checkbox1" name="checkbox1" value="">
                             <label for="checkbox1">Selected digits in Entry number must be unique</label>
@@ -107,8 +108,9 @@
                     <button type="button" class="allBtn dark">Back</button>
                     <button type="button" class="allBtn dark">Next</button>
                 </div>
+                </div>
             </form>
-
+            
         </div>
     </div>
 </section>

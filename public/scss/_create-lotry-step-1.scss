@@ -5,15 +5,17 @@
     }
     form{
         border: 1px solid  $naveblue-color;
-        padding: 30px 25px;
+        padding: 0;
         border-radius: 5px;
+        background-color: $white-color;
         select, input, textarea {
             width: 100%;
             display: block;
             padding: 15px;
             border: 1px solid $naveblue-color;
-            border-radius: 5px;
+            border-radius: 6px;
             font-family:  $font-secondary;
+            font-size: 16px;
         }
         select{
             cursor: pointer;
@@ -60,9 +62,17 @@
                 .radio-sub-row{
                     margin-left: 60px;
                     margin-top: 5px;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
                     @include media-breakpoint-sm{
                         margin-left: 35px;
                       }
+                }
+                &.col-gap{
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
@@ -75,10 +85,18 @@
             text-transform: capitalize;
         }
         .form-title{
-            font-size: 30px;
+            font-size: 22px;
             line-height: 40px;
             margin-top: 0;
-            margin-bottom: 30px;
+            background: $gray-color;
+            border-radius: 5px 5px 0 0 !important;
+            border-bottom: 1px solid  $light-gray-color;
+            padding: 12px 18px;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .form-inner-body{
+            padding: 30px 25px;
         }
     }
 }

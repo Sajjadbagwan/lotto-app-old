@@ -2,6 +2,9 @@
 .win-setting-box{
     .win-setting-radio-btn{
         margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     h2{
         margin-top: 15px;

@@ -23,6 +23,19 @@ Route::get('/create_lotry_step4', function () {
     return view('create_lotry_step4');
 });
 
+Route::get('/signin', function () {
+    return view('signin');
+});
+
+Route::get('/pages_recover_password', function () {
+    return view('pages_recover_password');
+});
+
+Route::get('/pages_signup', function () {
+    return view('pages_signup');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

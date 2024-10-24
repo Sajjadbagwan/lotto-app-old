@@ -12,7 +12,8 @@
     <div class="container">
         <div class="">
             <form action="">
-                <h2>Default Fee Settings</h2>
+                <h2 class="form-title">Default Fee Settings</h2>
+                <div class="form-inner-body">
                 <div class="customFormWrap inlineField flex-column">
                     <div class="radio-button-row">
                         <div class="prizes-box">
@@ -226,7 +227,7 @@
                     <button type="button" class="allBtn dark">Back</button>
                     <button type="button" class="allBtn dark">Finish</button>
                 </div>
-
+                </div>
             </form>
 
         </div>

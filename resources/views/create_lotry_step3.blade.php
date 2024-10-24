@@ -12,14 +12,15 @@
     <div class="container">
         <div class="">
             <form action="">
-                <h2>Prizes</h2>
+                <h2 class="form-title">Prizes</h2>
+                <div class="form-inner-body">
                 <div class="customFormWrap inlineField">
                     <div class="radio-button-row">
                         <div class="radio-row">
                             <input type="radio" id="radio1" name="radio-button" value="radio1">
                             <label for="radio1">Percentage of Proceeds</label>
                         </div>
-                        <div class="prizes-box">
+                        <div class="prizes-box mb-25">
                             <div class="customFormWrap inlineField example-row">
                                 <label class="customFormLabel mobile-hide" for="prize"></label>
                                 <div class="prize-title">Prize</div>
@@ -190,7 +191,7 @@
                     <button type="button" class="allBtn dark">Back</button>
                     <button type="button" class="allBtn dark">Next</button>
                 </div>
-
+               </div>
             </form>
 
         </div>
