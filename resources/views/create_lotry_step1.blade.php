@@ -114,7 +114,7 @@
                     </div> -->
 
                     <div class="button-row d-flex mt-4">
-                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
                   </div>
 
                 </div>
@@ -221,8 +221,8 @@
                         <button type="button" class="allBtn dark">Next</button> 
                 </div> -->
                 <div class="button-row d-flex mt-4">
-                    <button class="btn allBtn dark js-btn-prev" type="button" title="Prev">Prev</button>
-                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next</button>
+                    <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
+                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </div>
@@ -411,8 +411,8 @@
                         <button type="button" class="allBtn dark">Next</button>
                 </div> -->
                 <div class="button-row d-flex mt-4 col-12">
-                      <button class="btn allBtn dark js-btn-prev" type="button" title="Prev">Prev</button>
-                      <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next</button>
+                      <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
+                      <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
                     </div>
                </div>
               </div>
@@ -643,7 +643,7 @@
                         <button type="button" class="allBtn dark">Next</button>
                 </div> -->
                 <div class="button-row d-flex mt-4">
-                    <button class="btn allBtn dark js-btn-prev" type="button" title="Prev">Prev</button>
+                    <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
                     <button class="btn allBtn dark ml-auto" type="button" title="Send">Send</button>
                   </div>
                 </div>
