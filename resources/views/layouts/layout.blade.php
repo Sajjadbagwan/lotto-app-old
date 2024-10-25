@@ -59,6 +59,10 @@
     <!-- <script type="text/javascript" src="{{asset('js/bootstrap-datetimepicker.js')}}"></script> -->
     <script type="text/javascript" src="{{asset('js/bootstrap-datepicker.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/common.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
+    <!-- <script type="text/javascript" src="{{asset('js/jquery.validate.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.bootstrap.wizard.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/examples.wizard.js')}}"></script> -->
     <!-- Auto-hide Alert & Toast -->
       @yield('javascript')
 </body>

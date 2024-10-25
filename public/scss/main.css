@@ -376,6 +376,204 @@ input:focus, select:focus, textarea:focus {
   padding-left: 50px;
 }
 
+/*============ */
+.content {
+  width: 100%;
+  margin: 0 auto 50px;
+}
+
+.content__title {
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content__title--m-sm {
+  margin-bottom: 10px;
+}
+
+.multisteps-form__progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  padding-block: 80px 60px;
+  background-color: #fdfdfd;
+}
+
+.multisteps-form__panel .form-inner-body .button-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.multisteps-form__panel .js-btn-next {
+  margin-left: auto;
+}
+
+.multisteps-form__progress-btn {
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  position: relative;
+  padding-top: 45px;
+  color: #333333;
+  text-indent: -9999px;
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.multisteps-form__progress-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  z-index: 10;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 0.5;
+  pointer-events: none;
+}
+
+@media (min-width: 320px) {
+  .multisteps-form__progress-btn {
+    text-indent: 0;
+  }
+}
+.multisteps-form__progress-btn:before {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "";
+  transform: translateX(-50%);
+  transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 3;
+  background: #CCC;
+  color: #CCC;
+}
+
+.multisteps-form__progress-btn:after {
+  position: absolute;
+  top: 5px;
+  left: calc(-50% - 6.5px);
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: currentColor;
+  z-index: 1;
+}
+
+.multisteps-form__progress-btn.js-active:after {
+  color: #0088CC;
+}
+
+.multisteps-form__progress-btn:first-child:after {
+  display: none;
+}
+
+.multisteps-form__progress-btn.js-active {
+  color: #0088CC;
+}
+
+.multisteps-form__progress-btn.js-active:before {
+  border: 4px solid #0088CC;
+  background-color: #0088CC;
+}
+
+.multisteps-form__form {
+  position: relative;
+}
+
+.multisteps-form__panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.multisteps-form__panel.js-active {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.multisteps-form__panel[data-animation=fade] {
+  animation: fadeInRight 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.multisteps-form__panel[data-animation=fade].js-active {
+  animation: fadeInLeft 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/*---- CUSTOM ANIMATION ----*/
+.fadeInRight {
+  animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.main-section {
+  margin-top: 120px;
+}
+@media (max-width: 1200px) {
+  .main-section {
+    margin-top: 45px;
+  }
+}
+.main-section .page-title {
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .main-section .page-title {
+    font-size: 22px;
+  }
+}
+
+.ui-state-default.ui-state-active {
+  border: 1px solid #2D3E50 !important;
+  background: #2D3E50 !important;
+}
+
 .main-header {
   background-color: #ffffff;
   padding-bottom: 4px;
@@ -916,19 +1114,17 @@ input:focus, select:focus, textarea:focus {
 }
 
 .lotry-form-main-wrap {
-  margin-block: 120px 100px;
+  margin-block: 50px 100px;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .lotry-form-main-wrap {
     margin-block: 30px 80px;
   }
 }
-.lotry-form-main-wrap form {
-  padding: 0;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
-.lotry-form-main-wrap form select, .lotry-form-main-wrap form input, .lotry-form-main-wrap form textarea {
+.lotry-form-main-wrap select, .lotry-form-main-wrap input, .lotry-form-main-wrap textarea {
   width: 100%;
   display: block;
   padding: 9px 15px;
@@ -938,26 +1134,26 @@ input:focus, select:focus, textarea:focus {
   font-size: 14px;
   height: 40px;
 }
-.lotry-form-main-wrap form select {
+.lotry-form-main-wrap select {
   cursor: pointer;
 }
-.lotry-form-main-wrap form textarea {
+.lotry-form-main-wrap textarea {
   resize: none;
   min-height: 100px;
   overflow-y: auto;
 }
-.lotry-form-main-wrap form .customFormWrap {
+.lotry-form-main-wrap .customFormWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 15px;
 }
 @media (max-width: 767px) {
-  .lotry-form-main-wrap form .customFormWrap {
+  .lotry-form-main-wrap .customFormWrap {
     flex-direction: column;
   }
 }
-.lotry-form-main-wrap form .customFormWrap label.customFormLabel {
+.lotry-form-main-wrap .customFormWrap label.customFormLabel {
   max-width: 300px;
   width: 100%;
   display: inline-block;
@@ -965,25 +1161,25 @@ input:focus, select:focus, textarea:focus {
   font-size: 14px;
 }
 @media (max-width: 767px) {
-  .lotry-form-main-wrap form .customFormWrap label.customFormLabel {
+  .lotry-form-main-wrap .customFormWrap label.customFormLabel {
     padding-bottom: 6px;
     max-width: 100%;
   }
 }
-.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row {
+.lotry-form-main-wrap .customFormWrap .radio-button-row .radio-row {
   display: flex;
   align-items: baseline;
   gap: 10px;
   cursor: pointer;
 }
-.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row input {
+.lotry-form-main-wrap .customFormWrap .radio-button-row .radio-row input {
   width: auto;
 }
-.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-row label {
+.lotry-form-main-wrap .customFormWrap .radio-button-row .radio-row label {
   cursor: pointer;
   font-size: 14px;
 }
-.lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-sub-row {
+.lotry-form-main-wrap .customFormWrap .radio-button-row .radio-sub-row {
   margin-left: 60px;
   margin-top: 5px;
   gap: 10px;
@@ -991,27 +1187,27 @@ input:focus, select:focus, textarea:focus {
   flex-direction: column;
 }
 @media (max-width: 480px) {
-  .lotry-form-main-wrap form .customFormWrap .radio-button-row .radio-sub-row {
+  .lotry-form-main-wrap .customFormWrap .radio-button-row .radio-sub-row {
     margin-left: 35px;
   }
 }
-.lotry-form-main-wrap form .customFormWrap .radio-button-row.col-gap {
+.lotry-form-main-wrap .customFormWrap .radio-button-row.col-gap {
   gap: 10px;
   display: flex;
   flex-direction: column;
 }
-.lotry-form-main-wrap form .button-group-row {
+.lotry-form-main-wrap .button-group-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
 }
-.lotry-form-main-wrap form h2 {
+.lotry-form-main-wrap h2 {
   margin-block: 10px 10px;
   font-size: 16px;
   text-transform: capitalize;
 }
-.lotry-form-main-wrap form .form-title {
+.lotry-form-main-wrap .form-title {
   font-size: 22px;
   line-height: 40px;
   margin-top: 0;
@@ -1022,7 +1218,7 @@ input:focus, select:focus, textarea:focus {
   position: relative;
   margin-bottom: 0;
 }
-.lotry-form-main-wrap form .form-inner-body {
+.lotry-form-main-wrap .form-inner-body {
   padding: 30px 25px;
   background: #fdfdfd;
   border-radius: 0 0 5px 5px;
@@ -1060,20 +1256,20 @@ input:focus, select:focus, textarea:focus {
     flex-direction: row-reverse;
   }
 }
-.lotry-step-2-form-box form .customFormWrap.example-row {
+.lotry-step-2-form-box .customFormWrap.example-row {
   justify-content: start;
   flex-direction: row;
   padding-block: 20px;
 }
 @media (max-width: 767px) {
-  .lotry-step-2-form-box form .customFormWrap.example-row {
+  .lotry-step-2-form-box .customFormWrap.example-row {
     padding-block: 20px 5px;
   }
 }
-.lotry-step-2-form-box form .customFormWrap.example-row div {
+.lotry-step-2-form-box .customFormWrap.example-row div {
   white-space: nowrap;
 }
-.lotry-step-2-form-box form .form-title {
+.lotry-step-2-form-box .form-title {
   font-size: 30px;
   line-height: 40px;
   margin-top: 0;
@@ -1113,50 +1309,50 @@ input:focus, select:focus, textarea:focus {
 .lotry-step-3-form-box .radio-button-row {
   width: 100%;
 }
-.lotry-step-3-form-box form h2 {
+.lotry-step-3-form-box h2 {
   font-size: 16px;
   line-height: 40px;
   margin-block: 0 25px;
   font-weight: 500;
 }
-.lotry-step-3-form-box form .fix-prizes-box .customFormWrap {
+.lotry-step-3-form-box .fix-prizes-box .customFormWrap {
   gap: 15px;
 }
-.lotry-step-3-form-box form .fix-prizes-box .row {
+.lotry-step-3-form-box .fix-prizes-box .row {
   width: 100%;
 }
-.lotry-step-3-form-box form .fix-prizes-box .row span {
+.lotry-step-3-form-box .fix-prizes-box .row span {
   display: none;
 }
 @media (max-width: 767px) {
-  .lotry-step-3-form-box form .fix-prizes-box .row span {
+  .lotry-step-3-form-box .fix-prizes-box .row span {
     display: block;
     padding-bottom: 6px;
   }
 }
-.lotry-step-3-form-box form .prizes-box .customFormWrap.example-row {
+.lotry-step-3-form-box .prizes-box .customFormWrap.example-row {
   justify-content: flex-start;
 }
-.lotry-step-3-form-box form .prizes-box .customFormWrap.example-row div {
+.lotry-step-3-form-box .prizes-box .customFormWrap.example-row div {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .lotry-step-3-form-box form .prizes-box .customFormWrap.example-row div {
+  .lotry-step-3-form-box .prizes-box .customFormWrap.example-row div {
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  .lotry-step-3-form-box form .prizes-box .customFormWrap.example-row {
+  .lotry-step-3-form-box .prizes-box .customFormWrap.example-row {
     flex-direction: row;
   }
-  .lotry-step-3-form-box form .prizes-box .customFormWrap.example-row label {
+  .lotry-step-3-form-box .prizes-box .customFormWrap.example-row label {
     padding-bottom: 0 !important;
   }
-  .lotry-step-3-form-box form .prizes-box .customFormWrap.example-row .mobile-hide {
+  .lotry-step-3-form-box .prizes-box .customFormWrap.example-row .mobile-hide {
     display: none;
   }
 }
-.lotry-step-3-form-box form .prizes-box .customFormWrap.example-row.top-space {
+.lotry-step-3-form-box .prizes-box .customFormWrap.example-row.top-space {
   margin-top: -15px;
 }
 @media (max-width: 767px) {

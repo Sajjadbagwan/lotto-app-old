@@ -1,9 +1,8 @@
 .lotry-form-main-wrap{
-    margin-block: 120px 100px;
+    margin-block: 50px 100px;
     @include media-breakpoint-md{
         margin-block: 30px 80px;
     }
-    form{
         // border: 1px solid  $naveblue-color;
         padding: 0;
         border-radius: 5px;
@@ -106,5 +105,4 @@
             background: $dim-gray;
             border-radius: 0 0 5px 5px;
         }
-    }
 }

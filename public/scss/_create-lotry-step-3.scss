@@ -27,7 +27,7 @@
     .radio-button-row{
         width: 100%;
     }
-    form{
+    
         h2{
             font-size: 16px;
             line-height: 40px;
@@ -75,7 +75,7 @@
             }
         }
         }
-    }
+    
    .radio-row{
     @include media-breakpoint-md{
         margin-bottom: 20px;
