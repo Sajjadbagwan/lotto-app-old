@@ -79,3 +79,10 @@
         }
     }
 })(jQuery);
+
+
+/*====datepicker js =======*/
+
+$(function () {
+    $("#datepicker").datepicker();
+});

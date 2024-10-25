@@ -17,9 +17,9 @@
                     <div class="customFormWrap inlineField">
                         <label class="customFormLabel" for="userfname">Type</label>
                         <select name="" id="type" class="form-select">
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Lottery-1">Lottery-1</option>
+                            <option value="Lottery-2">Lottery-2</option>
+                            <option value="Lottery-3">Lottery-3</option>
                         </select>
                     </div>
 
@@ -50,7 +50,12 @@
 
                     <div class="customFormWrap inlineField">
                         <label for="" class="customFormLabel">First Draw</label>
-                        <input type="date" id="" name="">
+                        <div class="date-input-group">
+                            <span class="input-group-text">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" id="datepicker">
+                        </div>
                     </div>
 
                     <div class="customFormWrap inlineField">
@@ -85,8 +90,8 @@
                         </div>
                     </div>
                     <div class="button-group-row">
-                        <a href="#" class="allBtn dark">Back</a>
-                        <a href="create_lotry_step2" class="allBtn dark">Next</a>
+                        <a href="#" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
+                        <a href="create_lotry_step2" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         <!-- <button type="button" class="allBtn dark">Back</button>
                         <button type="button" class="allBtn dark">Next</button> -->
                     </div>

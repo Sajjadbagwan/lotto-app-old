@@ -52,8 +52,8 @@
 							</div>
 
 							<div class="row">
-								<div class="col-sm-8">
-									<div class="checkbox-custom checkbox-default">
+								<div class="col-sm-8 checkbox-button-row">
+									<div class="radio-row checkbox-custom checkbox-default">
 										<input id="AgreeTerms" name="agreeterms" type="checkbox"/>
 										<label for="AgreeTerms">I agree with <a href="#">terms of use</a></label>
 									</div>

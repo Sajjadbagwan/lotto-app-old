@@ -43,8 +43,8 @@
 							</div>
 
 							<div class="row">
-								<div class="col-sm-8">
-									<div class="checkbox-custom checkbox-default">
+								<div class="col-sm-8 checkbox-button-row">
+									<div class="radio-row checkbox-custom checkbox-default">
 										<input id="RememberMe" name="rememberme" type="checkbox"/>
 										<label for="RememberMe">Remember Me</label>
 									</div>

@@ -201,9 +201,11 @@
                             <div class="prize-title">Rollover</div>
                         </div>
                         <div class="prizes-box">
-                            <div class="radio-row rollover-bt-space">
-                                <input type="checkbox" id="checkbox2" name="checkbox2" value="">
-                                <label for="checkbox2">Rollover if no 1st prize winner.</label>
+                            <div class="checkbox-button-row">
+                                <div class="radio-row rollover-bt-space">
+                                    <input type="checkbox" id="checkbox6" name="checkbox6" value="">
+                                    <label for="checkbox6">Rollover if no 1st prize winner.</label>
+                                </div>
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="firstPrize">Rollover amount per draw</label>
@@ -229,8 +231,8 @@
                     </div>
                 </div>
                 <div class="button-group-row">
-                <a href="create_lotry_step3" class="allBtn dark">Back</a>
-                <a href="#" class="allBtn dark">Next</a>
+                <a href="create_lotry_step3" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
+                <a href="#" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                         <!-- <button type="button" class="allBtn dark">Back</button>
                         <button type="button" class="allBtn dark">Next</button> -->
                 </div>
