@@ -1,12 +1,12 @@
 <header class="main-header">
         <div class="headerMenuOuter">
-            <div class="header-top-section">
+            <!-- <div class="header-top-section">
                 <div class="container">
                     <a href="#" class="logo">
                         <img src="{{ asset('images/logo.svg') }}" alt="logo">
                     </a>
                 </div>
-            </div>
+            </div> -->
             <div class="header-menu">
                 <ul>
                     <li><a href="#">My Account</a></li>
