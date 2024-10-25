@@ -380,7 +380,7 @@ input:focus, select:focus, textarea:focus {
   background-color: #ffffff;
   padding-bottom: 4px;
   padding: 0px;
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 22;
@@ -916,7 +916,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .lotry-form-main-wrap {
-  margin-block: 50px 100px;
+  margin-block: 120px 100px;
 }
 @media (max-width: 767px) {
   .lotry-form-main-wrap {
