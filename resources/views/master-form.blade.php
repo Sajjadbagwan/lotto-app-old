@@ -182,6 +182,36 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="customFormWrap inlineField toggle-box">
+                      <label class="toggle switch-primary">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                      <label class="toggle switch-success">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                      <label class="toggle switch-warning">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                      <label class="toggle switch-danger">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                      <label class="toggle switch-info">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                      <label class="toggle switch-dark">
+                        <input class="toggle-checkbox" type="checkbox" checked>
+                        <div class="toggle-switch"></div>
+                      </label>
+                    </div>
+
+
                     </div>
                 </div>
             </form>
