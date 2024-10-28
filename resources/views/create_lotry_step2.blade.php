@@ -8,8 +8,7 @@
 @section('content')
 
 <section class="lotry-form-main-wrap lotry-step-2-form-box">
-    <div class="container">
-        
+    <div class="">
         <div class="">
             <form action="">
             <h2 class="form-title">Entry Settings</h2>

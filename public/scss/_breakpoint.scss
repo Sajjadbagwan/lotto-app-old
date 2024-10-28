@@ -1,4 +1,5 @@
 $breakpoints: (
+  "min-x-sm": 320px,
   "sm": 480px,
   "min-sm": 480px,
   "smd": 567px,
@@ -21,6 +22,12 @@ $breakpoints: (
   "min-desk": 1600px,
   "min-big-desktop":1940px,
 );
+
+@mixin media-breakpoint-min-x-sm {
+  @media (min-width: map-get($breakpoints, "min-x-sm")) {
+    @content;
+  }
+}
 
 @mixin media-breakpoint-sm {
   @media (max-width: map-get($breakpoints, "sm")) {

@@ -35,6 +35,10 @@ Route::get('/pages_signup', function () {
     return view('pages_signup');
 });
 
+Route::get('/master-form', function () {
+    return view('master-form');
+});
+
 
 Auth::routes();
 

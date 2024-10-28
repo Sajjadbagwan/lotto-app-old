@@ -10,7 +10,6 @@
 <h1 class="page-title">lotry form step</h1>
 <section class="lotry-form-main-wrap">
     
-
 <!-- -->
 <div class="content">
   <div class="content__inner">
@@ -29,7 +28,6 @@
         <div class="row">
           <div class="col-12 col-lg-8 m-auto">
             <form class="multisteps-form__form">
-              
               <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active">
                 <h2 class="form-title">Create New Lottery</h2>
                 <div class="form-inner-body">
@@ -108,13 +106,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="button-group-row">
-                        <a href="#" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
-                        <a href="create_lotry_step2" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                    </div> -->
-
                     <div class="button-row d-flex mt-4">
-                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
+                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                   </div>
 
                 </div>
@@ -214,15 +207,9 @@
                     <label for="" class="customFormLabel">Notify:</label>
                     <input type="text" id="" name="" value="" class="form-control">
                 </div>
-                <!-- <div class="button-group-row">
-                <a href="create_lotry_step1" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
-                <a href="create_lotry_step3" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        <button type="button" class="allBtn dark">Back</button>
-                        <button type="button" class="allBtn dark">Next</button> 
-                </div> -->
                 <div class="button-row d-flex mt-4">
                     <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
-                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
+                    <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </div>
@@ -404,15 +391,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="button-group-row">
-                <a href="create_lotry_step2" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
-                        <a href="create_lotry_step4" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        <button type="button" class="allBtn dark">Back</button>
-                        <button type="button" class="allBtn dark">Next</button>
-                </div> -->
                 <div class="button-row d-flex mt-4 col-12">
                       <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
-                      <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-next" aria-hidden="true"></i></button>
+                      <button class="btn allBtn dark ml-auto js-btn-next" type="button" title="Next">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                     </div>
                </div>
               </div>
@@ -632,16 +613,8 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-                <!-- <div class="button-group-row">
-                <a href="create_lotry_step3" class="allBtn dark"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous</a>
-                <a href="#" class="allBtn dark">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        <button type="button" class="allBtn dark">Back</button>
-                        <button type="button" class="allBtn dark">Next</button>
-                </div> -->
                 <div class="button-row d-flex mt-4">
                     <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
                     <button class="btn allBtn dark ml-auto" type="button" title="Send">Send</button>
