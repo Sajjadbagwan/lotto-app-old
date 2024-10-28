@@ -1573,6 +1573,7 @@ input:-internal-autofill-selected {
 }
 .lotry-step-3-form-box .prizes-box .customFormWrap.example-row {
   justify-content: flex-start;
+  height: 55px;
 }
 .lotry-step-3-form-box .prizes-box .customFormWrap.example-row div {
   width: 100%;
@@ -1613,6 +1614,11 @@ input:-internal-autofill-selected {
   .lotry-step-3-form-box .mb-25 {
     margin-bottom: 5px;
   }
+}
+
+.prize-main-bold-title {
+  font-weight: 600;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .lotry-step-4-form-box .win-setting-box .win-setting-radio-btn {

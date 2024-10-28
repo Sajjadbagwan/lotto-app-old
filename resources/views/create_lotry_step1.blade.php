@@ -276,7 +276,7 @@
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
-                                <label class="customFormLabel" for="firstPrize">1st Prize</label>
+                                <label class="customFormLabel prize-main-bold-title" for="firstPrize">1st Prize</label>
                                 <div class="customFormWrap inlineField">
                                     <div class="row">
                                         <span>Type</span>
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
-                                <label class="customFormLabel" for="secondprize">2nd Prize</label>
+                                <label class="customFormLabel  prize-main-bold-title" for="secondprize">2nd Prize</label>
                                 <div class="customFormWrap inlineField">
                                     <div class="row">
                                         <span>Type</span>
@@ -318,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
-                                <label class="customFormLabel" for="thirdprize">3rd Prize</label>
+                                <label class="customFormLabel  prize-main-bold-title" for="thirdprize">3rd Prize</label>
                                 <div class="customFormWrap inlineField">
                                     <div class="row">
                                         <span>Type</span>
@@ -339,7 +339,7 @@
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
-                                <label class="customFormLabel" for="fourthprize">4th Prize</label>
+                                <label class="customFormLabel  prize-main-bold-title" for="fourthprize">4th Prize</label>
                                 <div class="customFormWrap inlineField">
                                     <div class="row">
                                         <span>Type</span>
@@ -360,7 +360,7 @@
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
-                                <label class="customFormLabel" for="fifthprize">5th Prize</label>
+                                <label class="customFormLabel  prize-main-bold-title" for="fifthprize">5th Prize</label>
                                 <div class="customFormWrap inlineField">
                                     <div class="row">
                                         <span>Type</span>

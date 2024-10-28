@@ -53,6 +53,7 @@
             .customFormWrap{
             &.example-row{
                 justify-content: flex-start;
+                height: 55px;
                 // padding-block: 0px 15px !important;
                 div{
                     width: 100%;
@@ -92,4 +93,8 @@
         margin-bottom: 5px;
       }
    }
+}
+.prize-main-bold-title{
+    font-weight: 600;
+    border-bottom: 1px solid $gray-border-color;
 }
