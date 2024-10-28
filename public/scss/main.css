@@ -486,6 +486,12 @@ textarea:focus {
   margin-bottom: 15px;
   height: 26px;
 }
+@media (max-width: 767px) {
+  .checkbox-radio-box-inner-section {
+    flex-direction: column;
+    padding-left: 25px;
+  }
+}
 
 /*===================*/
 .customFormWrap.has-success label {

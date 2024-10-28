@@ -556,6 +556,10 @@ textarea {
       height: 26px;
     }
   }
+  @include media-breakpoint-md{
+    flex-direction: column;
+    padding-left: 25px;
+  }
 }
 
 /*===================*/

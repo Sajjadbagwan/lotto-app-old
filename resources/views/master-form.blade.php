@@ -17,6 +17,11 @@
                 </div>
 
                 <div class="customFormWrap inlineField">
+                    <label class="customFormLabel" for="emailinput">Email Input</label>
+                    <input type="email" id="emailinput" name="emailinput" placeholder="Enter Email">
+                </div>
+
+                <div class="customFormWrap inlineField">
                     <label class="customFormLabel" for="disabledinput">Disabled</label>
                     <input type="text" id="disabledinput" name="disabledinput" placeholder="Disabled input here..." disabled>
                 </div>
