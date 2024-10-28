@@ -1541,6 +1541,12 @@ input:-internal-autofill-selected {
     width: 100% !important;
   }
 }
+@media (max-width: 767px) and (max-width: 767px) {
+  .lotry-step-3-form-box .customFormWrap label.customFormLabel.prize-main-bold-title {
+    font-weight: 600;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
 .lotry-step-3-form-box .customFormWrap .multipal-title-row {
   width: 100%;
   display: flex;
@@ -1614,11 +1620,6 @@ input:-internal-autofill-selected {
   .lotry-step-3-form-box .mb-25 {
     margin-bottom: 5px;
   }
-}
-
-.prize-main-bold-title {
-  font-weight: 600;
-  border-bottom: 1px solid #dee2e6;
 }
 
 .lotry-step-4-form-box .win-setting-box .win-setting-radio-btn {
