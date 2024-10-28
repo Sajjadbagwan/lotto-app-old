@@ -121,12 +121,12 @@
                     <label class="customFormLabel" for="Selectionrange">Selection range</label>
                     <div class="input-range-box">
                         <div class="from-range-box">
-                            <span class="prize-title">From</span>
-                            <input type="number" id="minrange" name="minrange" min="0" max="99">
+                            <!-- <span class="prize-title">From</span> -->
+                            <input type="number" id="minrange" name="minrange" min="0" max="99" placeholder="From">
                         </div>
                         <div class="from-range-box">
-                            <span class="prize-title">To</span>
-                            <input type="number" id="maxrange" name="maxrange" min="0" max="99">
+                            <!-- <span class="prize-title">To</span> -->
+                            <input type="number" id="maxrange" name="maxrange" min="0" max="99" placeholder="To">
                         </div>
                     </div>
                 </div>
