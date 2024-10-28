@@ -689,6 +689,11 @@ input:-moz-placeholder {
   font-weight: 400;
   font-size: 14px;
 }
+.customFormWrap label.customFormLabel:after {
+  content: "*";
+  right: 0;
+  color: #d2322d;
+}
 .customFormWrap input {
   width: 100%;
   display: block;
@@ -813,6 +818,15 @@ input:-moz-placeholder {
 
 input:-internal-autofill-selected {
   background-color: #ffffff;
+}
+
+/*======= Required validation css=======*/
+.require .input-require-box {
+  width: 100%;
+}
+.require .error-massage {
+  color: #d2322d;
+  display: none;
 }
 
 .main-header {
@@ -1510,6 +1524,9 @@ input:-internal-autofill-selected {
 .lotry-step-2-form-box .customFormWrap.example-row div {
   white-space: nowrap;
 }
+.lotry-step-2-form-box .customFormWrap.example-row .customFormLabel:after {
+  display: none;
+}
 .lotry-step-2-form-box .form-title {
   font-size: 30px;
   line-height: 40px;
@@ -1602,6 +1619,12 @@ input:-internal-autofill-selected {
 }
 .lotry-step-3-form-box .prizes-box .customFormWrap.example-row.top-space {
   margin-top: -15px;
+}
+.lotry-step-3-form-box .prizes-box .customFormWrap.example-row .customFormLabel:after {
+  display: none;
+}
+.lotry-step-3-form-box .prizes-box .customFormWrap.multipal-input-title .customFormLabel:after {
+  display: none;
 }
 @media (max-width: 767px) {
   .lotry-step-3-form-box .radio-row {

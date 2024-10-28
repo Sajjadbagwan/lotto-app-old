@@ -31,53 +31,89 @@
               <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active">
                 <h2 class="form-title">Create New Lottery</h2>
                 <div class="form-inner-body">
-                    <div class="customFormWrap inlineField">
+                    <div class="customFormWrap inlineField require">
                         <label class="customFormLabel" for="userfname">Type</label>
-                        <select name="" id="type" class="form-select">
-                            <option value="Lottery-1">Lottery-1</option>
-                            <option value="Lottery-2">Lottery-2</option>
-                            <option value="Lottery-3">Lottery-3</option>
-                        </select>
-                    </div>
-
-                    <div class="customFormWrap inlineField">
-                        <label class="customFormLabel" for="lotteryname">Lottery Name</label>
-                        <input type="text" id="lotteryname" name="" value="" class="form-control">
-                    </div>
-
-                    <div class="customFormWrap inlineField">
-                        <label class="customFormLabel" for="">Description</label>
-                        <textarea name="" id=""
-                            class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt</textarea>
-                    </div>
-
-                    <div class="customFormWrap inlineField">
-                        <label class="customFormLabel" for="">Default Entry Fee</label>
-                        <input type="number" id="" name="" value="" class="form-control">
-                    </div>
-
-                    <div class="customFormWrap inlineField">
-                        <label class="customFormLabel" for="">Repetion</label>
-                        <select name="" id="type" class="form-select">
-                            <option value="United Kingdom">one-off</option>
-                            <option value="United Kingdom">Weekly</option>
-                            <option value="United Kingdom">etc</option>
-                        </select>
-                    </div>
-
-                    <div class="customFormWrap inlineField">
-                        <label for="" class="customFormLabel">First Draw</label>
-                        <div class="date-input-group">
-                            <span class="input-group-text">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            </span>
-                            <input type="text" id="datepicker">
+                        <div class="input-require-box">
+                            <select name="" id="type" class="form-select">
+                                <option value="Lottery-1">Lottery-1</option>
+                                <option value="Lottery-2">Lottery-2</option>
+                                <option value="Lottery-3">Lottery-3</option>
+                            </select>
+                            <div class="error-massage">
+                                This field is required.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="customFormWrap inlineField">
+                    <div class="customFormWrap inlineField require">
+                        <label class="customFormLabel" for="lotteryname">Lottery Name</label>
+                        <div class="input-require-box">
+                            <input type="text" id="lotteryname" name="" value="" class="form-control">
+                            <div class="error-massage">
+                                This field is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="customFormWrap inlineField require">
+                        <label class="customFormLabel" for="">Description</label>
+                        <div class="input-require-box">
+                            <textarea name="" id=""
+                                class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                            </textarea>
+                                <div class="error-massage">
+                                    This field is required.
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="customFormWrap inlineField require">
+                        <label class="customFormLabel" for="">Default Entry Fee</label>
+                        <div class="input-require-box">
+                           <input type="number" id="" name="" value="" class="form-control">
+                           <div class="error-massage">
+                                    This field is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="customFormWrap inlineField require">
+                        <label class="customFormLabel" for="">Repetion</label>
+                        <div class="input-require-box">
+                            <select name="" id="type" class="form-select">
+                                <option value="United Kingdom">one-off</option>
+                                <option value="United Kingdom">Weekly</option>
+                                <option value="United Kingdom">etc</option>
+                            </select>
+                            <div class="error-massage">
+                                    This field is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="customFormWrap inlineField require">
+                        <label for="" class="customFormLabel">First Draw</label>
+                        <div class="input-require-box">
+                            <div class="date-input-group">
+                                <span class="input-group-text">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" id="datepicker">
+                            </div>
+                            <div class="error-massage">
+                                    This field is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="customFormWrap inlineField require">
                         <label class="customFormLabel" for="">First Draw's ID</label>
-                        <input type="text" id="" name="" value="" class="form-control">
+                        <div class="input-require-box">
+                           <input type="text" id="" name="" value="" class="form-control">
+                           <div class="error-massage">
+                                    This field is required.
+                            </div>
+                        </div>
                     </div>
                     <h2>Prize Award Style</h2>
                     <div class="customFormWrap inlineField">
@@ -117,32 +153,52 @@
     
             <h2 class="form-title">Entry Settings</h2>
             <div class="form-inner-body">
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label class="customFormLabel" for="Selectionrange">Selection range</label>
                     <div class="input-range-box">
                         <div class="from-range-box">
                             <!-- <span class="prize-title">From</span> -->
-                            <input type="number" id="minrange" name="minrange" min="0" max="99" placeholder="From">
+                            <div class="input-require-box">
+                               <input type="number" id="minrange" name="minrange" min="0" max="99" placeholder="From">
+                               <div class="error-massage">
+                                    This field is required.
+                                </div>
+                            </div>
                         </div>
                         <div class="from-range-box">
                             <!-- <span class="prize-title">To</span> -->
-                            <input type="number" id="maxrange" name="maxrange" min="0" max="99" placeholder="To">
+                            <div class="input-require-box">
+                                <input type="number" id="maxrange" name="maxrange" min="0" max="99" placeholder="To">
+                                <div class="error-massage">
+                                    This field is required.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label class="customFormLabel" for="amountselection">Amount of Selections</label>
-                    <input type="number" id="amountselection" name="amountselection" min="0" max="6">
+                    <div class="input-require-box">
+                        <input type="number" id="amountselection" name="amountselection" min="0" max="6">
+                        <div class="error-massage">
+                                    This field is required.
+                                </div>
+                    </div>
                 </div>
 
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label class="customFormLabel" for="">Separated by</label>
+                    <div class="input-require-box">
                     <select name="" id="type" class="form-select">
                         <option value="separatoption1">Separat option1</option>
                         <option value="separatoption2">Separat option2</option>
                         <option value="separatoption3">Separat option3</option>
                     </select>
+                    <div class="error-massage">
+                                    This field is required.
+                                </div>
+                    </div>
                 </div>
 
                 <div class="customFormWrap inlineField example-row">
@@ -153,59 +209,84 @@
                 <h2>Options</h2>
                 <div class="customFormWrap inlineField">
                     <div class="radio-button-row checkbox-button-row">
-                        <div class="radio-row">
+                        <div class="radio-row checkbox-success">
                             <input type="checkbox" id="checkbox1" name="checkbox1" value="">
                             <label for="checkbox1">Selected digits in Entry number must be unique</label>
                         </div>
-                        <div class="radio-row">
+                        <div class="radio-row checkbox-success">
                             <input type="checkbox" id="checkbox2" name="checkbox2" value="">
                             <label for="checkbox2">Order digits (oscending)</label>
                         </div>
-                        <div class="radio-row">
+                        <div class="radio-row checkbox-success">
                             <input type="checkbox" id="checkbox3" name="checkbox3" value="">
                             <label for="checkbox3">Entries must be unique l.e, no two players can have the same Entry
                                 number.</label>
                         </div>
-                        <div class="radio-row">
+                        <div class="radio-row checkbox-success">
                             <input type="checkbox" id="checkbox4" name="checkbox4" value="">
                             <label for="checkbox4">Entries can only win one prize per draw.</label>
                         </div>
-                        <div class="radio-row">
+                        <div class="radio-row checkbox-success">
                             <input type="checkbox" id="checkbox5" name="checkbox5" value="">
                             <label for="checkbox5">Automatically Run Draw (only available with RNG)</label>
                         </div>
                     </div>
                 </div>
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label class="customFormLabel" for="">Draw Time</label>
-                    <input type="time" id="timepicker" name="timepicker">
+                    <div class="input-require-box">
+                        <input type="time" id="timepicker" name="timepicker">
+                        <div class="error-massage">
+                                    This field is required.
+                                </div>
+                    </div>
                 </div>
                 <h3>Lock and Upload Entries</h3>
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <div class="input-range-box entries-box-row">
                         <div class="entries-box">
                             <span>Lock Entries</span>
-                            <input type="number" id="minrange" name="minrange" min="0">
+                            <div class="input-require-box">
+                               <input type="number" id="minrange" name="minrange" min="0">
+                               <div class="error-massage">
+                                    This field is required.
+                                </div>
+                            </div>
                         </div>
-                        <div class="entries-box">
+                        <div class="entries-box require">
+                          <div class="input-require-box">
                             <select name="" id="type" class="form-select">
                                 <option value="United Kingdom">Minutes</option>
                                 <option value="United Kingdom">Hours</option>
                                 <option value="United Kingdom">Days</option>
                             </select>
+                            <div class="error-massage">
+                                    This field is required.
+                                </div>
+                            </div>
                             <span>before draw</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label for="" class="customFormLabel">Upload Entries to:</label>
-                    <input type="text" id="" name="" value="" class="form-control">
+                    <div class="input-require-box">
+                      <input type="text" id="" name="" value="" class="form-control">
+                      <div class="error-massage">
+                                    This field is required.
+                                </div>
+                    </div>
                 </div>
 
-                <div class="customFormWrap inlineField">
+                <div class="customFormWrap inlineField require">
                     <label for="" class="customFormLabel">Notify:</label>
+                    <div class="input-require-box">
                     <input type="text" id="" name="" value="" class="form-control">
+                    <div class="error-massage">
+                                    This field is required.
+                                </div>
+                    </div>
                 </div>
                 <div class="button-row d-flex mt-4">
                     <button class="btn allBtn dark js-btn-prev" type="button" title="Prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Prev</button>
@@ -229,33 +310,63 @@
                                 <label class="customFormLabel mobile-hide" for="prize"></label>
                                 <div class="prize-title">Prize</div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="firstPrize">1st Prize</label>
-                                <input type="number" id="firstPrize" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                   <input type="number" id="firstPrize" name="" value="" class="form-control">
+                                   <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="secondprize">2nd Prize</label>
-                                <input type="number" id="secondprize" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                    <input type="number" id="secondprize" name="" value="" class="form-control">
+                                    <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="thirdprize">3rd Prize</label>
-                                <input type="number" id="thirdprize" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                    <input type="number" id="thirdprize" name="" value="" class="form-control">
+                                    <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="fourthprize">4th Prize</label>
-                                <input type="number" id="fourthprize" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                   <input type="number" id="fourthprize" name="" value="" class="form-control">
+                                   <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="fifthprize">5th Prize</label>
-                                <input type="number" id="fifthprize" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                   <input type="number" id="fifthprize" name="" value="" class="form-control">
+                                   <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
                             <div class="customFormWrap inlineField example-row">
                                 <label class="customFormLabel" for="pricetotal">Price Total</label>
                                 <div class="">{40%}</div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="elmfee">Default ELM Fee</label>
-                                <input type="number" id="elmfee" name="" value="" class="form-control">
+                                <div class="input-require-box">
+                                   <input type="number" id="elmfee" name="" value="" class="form-control">
+                                   <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
                             <div class="customFormWrap inlineField example-row">
                                 <label class="customFormLabel" for="pricetotal">Profit</label>
@@ -277,106 +388,181 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel prize-main-bold-title" for="firstPrize">1st Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="cash1">Cash1</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Quantity</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="quantity1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel  prize-main-bold-title" for="secondprize">2nd Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="cash1">Cash1</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize2" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Quantity</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="quantity2" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel  prize-main-bold-title" for="thirdprize">3rd Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="Other">Other</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize3" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Quantity</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="quantity3" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel  prize-main-bold-title" for="fourthprize">4th Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="Entries">Entries</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize4" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Quantity</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="quantity4" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel  prize-main-bold-title" for="fifthprize">5th Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="cash1">Cash1</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize5" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Quantity</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="quantity5" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -384,9 +570,14 @@
                                 <label class="customFormLabel" for="pricetotal">Total</label>
                                 <div class="">{1,200}</div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="elmfee">Default ELM Fee</label>
+                                <div class="input-require-box">
                                 <input type="number" id="elmfee1" name="" value="" class="form-control">
+                                <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -404,13 +595,23 @@
                 <div class="customFormWrap inlineField flex-column">
                     <div class="radio-button-row">
                         <div class="prizes-box">
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="elmfee">Default ELM Fee</label>
+                                <div class="input-require-box">
                                 <input type="number" id="elmfee" name="" value="" class="form-control">
+                                <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="prizefee">Default Prize Fee</label>
+                                <div class="input-require-box">
                                 <input type="number" id="prizefee" name="" value="" class="form-control">
+                                <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
                             <div class="customFormWrap inlineField example-row">
                                 <label class="customFormLabel" for="pricetotal">Default Profit</label>
@@ -443,26 +644,41 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="firstPrize">1st Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Match</span>
-                                        <input type="number" id="matchprize" name="" value="" class="form-control">
+                                        <div class="input-require-box">
+                                           <input type="number" id="matchprize" name="" value="" class="form-control">
+                                           <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="cash">Cash</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row checkbox-button-row">
                                         <span>Insured</span>
-                                        <div class="radio-row">
+                                        <div class="radio-row checkbox-success">
                                             <input type="checkbox" id="checkbox6" name="checkbox6" value="">
                                             <label for="checkbox6"></label>
                                         </div>
@@ -471,26 +687,41 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="secondprize">2nd Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Match</span>
-                                        <input type="number" id="matchprize" name="" value="" class="form-control">
+                                        <div class="input-require-box">
+                                           <input type="number" id="matchprize" name="" value="" class="form-control">
+                                           <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="Cash">Cash</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row checkbox-button-row">
                                         <span>Insured</span>
-                                        <div class="radio-row">
+                                        <div class="radio-row checkbox-success">
                                             <input type="checkbox" id="checkbox7" name="checkbox7" value="">
                                             <label for="checkbox7"></label>
                                         </div>
@@ -499,26 +730,41 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="thirdprize">3rd Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Match</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="matchprize" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="other">other</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row checkbox-button-row">
                                         <span>Insured</span>
-                                        <div class="radio-row">
+                                        <div class="radio-row checkbox-success">
                                             <input type="checkbox" id="checkbox8" name="checkbox8" value="">
                                             <label for="checkbox8"></label>
                                         </div>
@@ -527,26 +773,41 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="fourthprize">4th Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Match</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="matchprize" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="entries">Entries</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row checkbox-button-row">
                                         <span>Insured</span>
-                                        <div class="radio-row">
+                                        <div class="radio-row checkbox-success">
                                             <input type="checkbox" id="checkbox9" name="checkbox9" value="">
                                             <label for="checkbox9"></label>
                                         </div>
@@ -555,26 +816,41 @@
                             </div>
                             <div class="customFormWrap inlineField">
                                 <label class="customFormLabel" for="fifthprize">5th Prize</label>
-                                <div class="customFormWrap inlineField">
+                                <div class="customFormWrap inlineField require">
                                     <div class="row">
                                         <span>Match</span>
+                                        <div class="input-require-box">
                                         <input type="number" id="matchprize" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Type</span>
+                                        <div class="input-require-box">
                                         <select name="" id="type" class="form-select">
                                             <option value="none">None</option>
                                             <option value="cash2">Cash2</option>
                                             <option value="cash3">Cash3</option>
                                         </select>
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row">
                                         <span>Prize</span>
+                                        <div class="input-require-box">
                                         <input type="text" id="Prize1" name="" value="" class="form-control">
+                                        <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                        </div>
                                     </div>
                                     <div class="row checkbox-button-row">
                                         <span>Insured</span>
-                                        <div class="radio-row">
+                                        <div class="radio-row checkbox-success">
                                             <input type="checkbox" id="checkbox10" name="checkbox10" value="">
                                             <label for="checkbox10"></label>
                                         </div>
@@ -589,18 +865,28 @@
                         </div>
                         <div class="prizes-box">
                             <div class="checkbox-button-row">
-                                <div class="radio-row rollover-bt-space">
+                                <div class="radio-row rollover-bt-space checkbox-success">
                                     <input type="checkbox" id="checkbox11" name="checkbox11" value="">
                                     <label for="checkbox11">Rollover if no 1st prize winner.</label>
                                 </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="firstPrize">Rollover amount per draw</label>
+                                <div class="input-require-box">
                                 <input type="number" id="firstPrize" name="" value="" class="form-control">
+                                <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
-                            <div class="customFormWrap inlineField">
+                            <div class="customFormWrap inlineField require">
                                 <label class="customFormLabel" for="secondprize">Maximum Rollover</label>
+                                <div class="input-require-box">
                                 <input type="number" id="secondprize" name="" value="" class="form-control">
+                                <div class="error-massage">
+                                       This field is required.
+                                     </div>
+                                </div>
                             </div>
                             <div class="customFormWrap inlineField example-row">
                                 <label class="customFormLabel" for="pricetotal">Maximum Draws before payout:</label>

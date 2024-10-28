@@ -788,16 +788,21 @@ input:-moz-placeholder {
   justify-content: space-between;
   padding-bottom: 15px;
 
-  label {
-    &.customFormLabel {
-      max-width: 300px;
-      width: 100%;
-      display: inline-block;
-      font-weight: 400;
-      font-size: 14px;
+    label {
+      &.customFormLabel {
+        max-width: 300px;
+        width: 100%;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        &:after{
+          content: "*";
+          right: 0;
+          color: $red_color;
+  
+        }
+      }
     }
-  }
-
   input {
     width: 100%;
     display: block;
@@ -996,4 +1001,15 @@ input:-moz-placeholder {
 }
 input:-internal-autofill-selected {
   background-color: $white-color;
+}
+
+/*======= Required validation css=======*/
+.require{
+  .input-require-box{
+    width: 100%;
+  }
+  .error-massage{
+    color: $red_color;
+    display: none;
+  }
 }

@@ -79,6 +79,18 @@
                 &.top-space{
                     margin-top: -15px;
                 }
+                .customFormLabel{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+            &.multipal-input-title{
+                .customFormLabel{
+                    &:after{
+                        display: none;
+                    }
+                }
             }
         }
         }
@@ -99,4 +111,5 @@
         margin-bottom: 5px;
       }
    }
+  
 }

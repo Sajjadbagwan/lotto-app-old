@@ -48,6 +48,11 @@
                 div {
                     white-space: nowrap;
                 }
+                .customFormLabel{
+                    &:after{
+                        display: none;
+                    }
+                }
             }
         }
         .form-title{
