@@ -223,6 +223,13 @@ p {
   }
 }
 
+.ui-datepicker{
+   td{
+    a {
+      text-align: center;
+    }
+   }
+}
 /*===== Common Radio button css ======*/
 
 [type="radio"]:checked,
