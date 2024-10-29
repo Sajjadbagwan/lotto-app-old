@@ -22,15 +22,25 @@
 						<form>
 							<div class="form-group mb-3">
 								<label>Name</label>
-								<div class="input-group">
+								<div class="input-group require">
+								    <div class="input-require-box">
 								   <input name="name" type="text" class="form-control form-control-lg" />
+								   <div class="error-massage">
+											This field is required.
+										</div>
+								   </div>
 								</div>
 							</div>
 
 							<div class="form-group mb-3">
 								<label>E-mail Address</label>
-								<div class="input-group">
+								<div class="input-group require">
+								<div class="input-require-box">
 							       <input name="email" type="email" class="form-control form-control-lg" />
+								   <div class="error-massage">
+											This field is required.
+										</div>
+								   </div>
 								</div>
 							</div>
 
@@ -38,14 +48,24 @@
 								<div class="row combo-coloum">
 									<div class="col-sm-6 mb-3">
 										<label>Password</label>
-										<div class="input-group">
+										<div class="input-group require">
+										<div class="input-require-box">
 										<input name="pwd" type="password" class="form-control form-control-lg" />
+										<div class="error-massage">
+											This field is required.
+										</div>
+										</div>
 										</div>
 									</div>
 									<div class="col-sm-6 mb-3">
 										<label>Password Confirmation</label>
-										<div class="input-group">
+										<div class="input-group require">
+										<div class="input-require-box">
 										<input name="pwd_confirm" type="password" class="form-control form-control-lg" />
+										<div class="error-massage">
+											This field is required.
+										</div>
+										</div>
 										</div>
 									</div>
 								</div>

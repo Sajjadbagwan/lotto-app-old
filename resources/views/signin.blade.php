@@ -21,11 +21,16 @@
 						<form action="" method="">
 							<div class="form-group mb-3">
 								<label>Username</label>
-								<div class="input-group">
+								<div class="input-group require">
+								<div class="input-require-box">
 									<input name="username" type="text" class="form-control form-control-lg" />
-									<span class="input-group-text">
+									<!-- <span class="input-group-text">
 										<i class="bx bx-user text-4"></i>
-									</span>
+									</span> -->
+									<div class="error-massage">
+											This field is required.
+										</div>
+									</div>
 								</div>
 							</div>
 
@@ -34,11 +39,16 @@
 									<label class="float-start">Password</label>
 									<a href="pages_recover_password" class="float-end">Lost Password?</a>
 								</div>
-								<div class="input-group">
-									<input name="pwd" type="password" class="form-control form-control-lg" />
-									<span class="input-group-text">
+								<div class="input-group require">
+									<div class="input-require-box">
+									   <input name="pwd" type="password" class="form-control form-control-lg" />
+									   <div class="error-massage">
+											This field is required.
+										</div>
+									</div>
+									<!-- <span class="input-group-text">
 										<i class="bx bx-lock text-4"></i>
-									</span>
+									</span> -->
 								</div>
 							</div>
 

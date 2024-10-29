@@ -7,7 +7,7 @@
                     </a>
                 </div>
             </div> -->
-            <div class="header-menu">
+            <div class="header-menu fixed m-1">
                 <ul>
                     <li><a href="#">My Account</a></li>
                     <li class="has-sub">
