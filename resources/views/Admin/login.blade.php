@@ -63,7 +63,7 @@
                       Sign In to Lotto
                     </h2>
 
-                    <x-form method="POST">
+                    <x-form method="POST" action="{{route('admin.authenticate')}}">
                       <div class="mb-4">
                         <label
                           class="mb-2.5 block font-medium text-black dark:text-white"

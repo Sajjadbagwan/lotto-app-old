@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html dir="{{ language()->direction() }}" lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}">
     <x-layouts.auth.head>
         <x-slot name="title">
             {!! !empty($title->attributes->has('title')) ? $title->attributes->get('title') : $title !!}
         </x-slot>
     </x-layouts.auth.head>
 
-    @mobile
-    <body class="bg-body">
-    @elsemobile
+    
     <body class="bg-body overflow-y-overlay">
-    @endmobile
 
         @stack('body_start')
 
