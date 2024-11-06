@@ -6,6 +6,9 @@ use App\Abstracts\Http\Controller;
 use App\Http\Requests\Auth\Login as Request;
 //use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Str;
+use Hash;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class Login extends Controller
 {
@@ -46,12 +49,13 @@ class Login extends Controller
                 'redirect' => null,
             ]);
         }
-
+       
+        // Sign in user
+        auth()->login(auth()->user());
         // Get user object
-        $user = user();
-
+        $user = auth()->user();
         // Check if user is enabled
-        if (! $user->enabled) {
+        if (! $user) {
             $this->logout();
 
             return response()->json([
@@ -102,8 +106,7 @@ class Login extends Controller
         // }
 
         // Redirect to landing page if is user
-        $url = route($user->landing_page, ['company_id' => $company->id]);
-
+        $url = route('admin.users.index');
         return response()->json([
             'status' => null,
             'success' => true,
@@ -118,7 +121,7 @@ class Login extends Controller
     {
         $this->logout();
 
-        return redirect()->route('login');
+        return redirect()->route('admin.login');
     }
 
     public function logout()
@@ -126,12 +129,12 @@ class Login extends Controller
         auth()->logout();
 
         // Session destroy is required if stored in database
-        if (config('session.driver') == 'database') {
-            $request = app('Illuminate\Http\Request');
+        // if (config('session.driver') == 'database') {
+        //     $request = app('Illuminate\Http\Request');
 
-            $request->session()->invalidate();
-            $request->session()->regenerateToken();
-            $request->session()->getHandler()->destroy($request->session()->getId());
-        }
+        //     $request->session()->invalidate();
+        //     $request->session()->regenerateToken();
+        //     $request->session()->getHandler()->destroy($request->session()->getId());
+        // }
     }
 }

@@ -1,4 +1,4 @@
-<div x-data="{ showPassword: false, password: '' }" x-cloak>
+<div>
     <input 
         type="password"
         x-bind:class="password ? 'pr-9' : 'pr-0'"
@@ -22,9 +22,5 @@
         @endif
         {{ $attributes->except(['placeholder', 'disabled', 'required', 'readonly', 'v-error', 'v-error-message']) }}
     />
-    <button type="button" class="absolute inset-y-0 top-7 right-0 flex items-center pr-3 text-gray-400 "
-     x-on:click="showPassword = !showPassword" x-show="password">
-        <span x-show="!showPassword" class="material-icons-outlined text-gray-500 text-lg">visibility_off</span>
-        <span x-show="showPassword" class="material-icons-outlined text-gray-500 text-lg">visibility</span>       
-    </button>
+   
 </div>

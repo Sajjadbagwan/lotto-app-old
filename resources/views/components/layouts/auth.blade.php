@@ -7,15 +7,15 @@
     </x-layouts.auth.head>
 
     
-    <body class="bg-body overflow-y-overlay">
+    <body class="bg-body overflow-y-overlay bg-slate-100">
 
         @stack('body_start')
 
         <div id="app" class="h-screen lg:h-auto bg-no-repeat bg-cover bg-center" style="background-image: url({{ asset('public/img/auth/login-bg.png') }});">
-            <div class="relative w-full lg:max-w-7xl flex items-center m-auto">
-                <x-layouts.auth.slider>
+            <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+                <!-- <x-layouts.auth.slider>
                     {!! $slider ?? '' !!}
-                </x-layouts.auth.slider>
+                </x-layouts.auth.slider> -->
 
                 <x-layouts.auth.content>
                     {!! $content !!}

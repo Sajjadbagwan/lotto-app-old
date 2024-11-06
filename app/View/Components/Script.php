@@ -45,8 +45,10 @@ class Script extends Component
 
     protected function getSource($alias, $folder, $file)
     {
-        $path = 'public/js/';
-        $version = version('short');
+        $path = 'js/';
+        
+        // $version = version('short');
+        $version = 1;
 
         if ($alias != 'core') {
             try {
@@ -54,7 +56,7 @@ class Script extends Component
 
                 if ($module) {
                     $path = 'modules/' . $module->getStudlyName() . '/Resources/assets/js/';
-                    $version = module_version($alias);
+                    //$version = module_version($alias);
                 }
             } catch (\Exception $e) {
 
@@ -65,7 +67,7 @@ class Script extends Component
             $path .= $folder . '/';
         }
 
-        $path .= $file . '.min.js?v=' . $version;
+        $path .= $file . '.js?v=' . $version;
 
         return $path;
     }

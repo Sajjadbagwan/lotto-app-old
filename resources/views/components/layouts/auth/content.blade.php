@@ -1,6 +1,6 @@
 @stack('content_start')
-<div class="w-full lg:w-46 h-31 flex flex-col justify-center gap-12 px-6 lg:px-24 py-24 mt-12 lg:mt-0">
-    <div class="flex flex-col gap-4">
+<div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div class="flex flex-wrap items-center">
         {!! $slot !!}
     </div>
 </div>

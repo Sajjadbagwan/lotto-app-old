@@ -9,7 +9,7 @@
 
     <x-slot name="content">
         <x-form.container>
-            <x-form id="user" route="users.store">
+            <x-form id="user" route="admin.users.store">
                 <x-form.section>
                     <x-slot name="head">
                         <x-form.section.head title="{{ trans('auth.personal_information') }}" description="{{ trans('auth.form_description.personal') }}" />

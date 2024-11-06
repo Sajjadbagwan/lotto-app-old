@@ -2,17 +2,18 @@
 
 return [
 
-    //'auth'                  => 'Authentication',
+    'auth'                  => 'Authentication',
     'profile'               => 'Profile',
     'logout'                => 'Logout',
     'login'                 => 'Login',
     'forgot'                => 'Forgot',
-    'login_to'              => 'Login to start your session',
+    'login_to'              => 'Login to Lotto Admin',
     'remember_me'           => 'Remember Me',
     'forgot_password'       => 'I forgot my password',
     'reset_password'        => 'Reset Password',
     'change_password'       => 'Change Password',
     'enter_email'           => 'Enter Your Email Address',
+    'email'                 => 'Email',
     'current_email'         => 'Current Email',
     'reset'                 => 'Reset',
     'never'                 => 'never',

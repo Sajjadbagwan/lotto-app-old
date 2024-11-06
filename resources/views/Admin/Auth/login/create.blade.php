@@ -4,10 +4,26 @@
     </x-slot>
 
     <x-slot name="content">
+    <div class="hidden w-full xl:block xl:w-1/2">
+            <div class="px-26 py-17.5 text-center">
+                <a class="mb-5.5 inline-block" href="#">
+                    <img
+                    class="hidden dark:block"
+                    src="{{ URL::to('/') }}/images/logo/logo.svg"
+                    alt="Logo"
+                    />
+                    <img
+                    class="dark:hidden"
+                    src="{{ URL::to('/') }}/images/logo/logo.svg"
+                    alt="Logo"
+                    />
+                </a>
+            </div>
+    </div>
+    <div class="w-full border-stroke dark:border-strokedark xl:w-1/2 xl:border-l-2">
+        <div class="w-full p-4 sm:p-12.5 xl:p-17.5">
         <div>
-            <img src="{{ asset('public/img/akaunting-logo-green.svg') }}" class="w-16" alt="Akaunting" />
-
-            <h1 class="text-lg my-3">
+            <h1 class="mb-9 text-2xl font-bold text-black dark:text-white sm:text-title-xl2">
                 {{ trans('auth.login_to') }}
             </h1>
         </div>
@@ -24,8 +40,8 @@
             v-cloak
         ></div>
 
-        <x-form id="auth" route="admin.login">
-            <div class="grid sm:grid-cols-6 gap-x-8 gap-y-6 my-3.5 lg:h-64">
+        <x-form id="auth">
+            <div class="grid sm:grid-cols-6 gap-x-8 gap-y-6 my-3.5">
                 <x-form.group.email
                     name="email"
                     label="{{ trans('auth.email') }}"
@@ -65,8 +81,7 @@
 
                 <x-button
                     type="submit"
-                    ::disabled="form.loading"
-                    class="relative flex items-center justify-center bg-green hover:bg-green-700 text-white px-6 py-1.5 text-base rounded-lg disabled:bg-green-100 sm:col-span-6"
+                    class="w-full cursor-pointer rounded-lg border border-primary bg-primary p-4 font-medium text-white transition hover:bg-opacity-90"
                     override="class"
                 >
                     <x-button.loading>
@@ -75,6 +90,10 @@
                 </x-button>
             </div>
         </x-form>
+        </div>
+    
+    </div>
+        
     </x-slot>
-
+    <x-script folder="auth" file="common" />
 </x-layouts.auth>

@@ -4,12 +4,12 @@
     <x-slot name="favorite"
         title="{{ trans_choice('general.users', 2) }}"
         icon="people"
-        route="users.index"
+        route="admin.users.index"
     ></x-slot>
 
     <x-slot name="buttons">
         @can('create-auth-users')
-            <x-link href="{{ route('users.create') }}" kind="primary" id="index-more-actions-invite-user">
+            <x-link href="{{ route('admin.users.create') }}" kind="primary" id="index-more-actions-invite-user">
                 {{ trans('general.title.invite', ['type' => trans_choice('general.users', 1)]) }}
             </x-link>
         @endcan
@@ -46,7 +46,7 @@
 
                     <x-table.tbody>
                         @foreach($users as $item)
-                            <x-table.tr href="{{ route('users.show', $item->id) }}">
+                            <x-table.tr href="{{ route('admin.users.show', $item->id) }}">
                                 <x-table.td kind="bulkaction">
                                     <x-index.bulkaction.single
                                         id="{{ $item->id }}"

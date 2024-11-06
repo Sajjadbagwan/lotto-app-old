@@ -3,29 +3,33 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Abstracts\Http\Controller;
-use App\Events\Auth\LandingPageShowing;
+//use App\Events\Auth\LandingPageShowing;
 use App\Http\Requests\Auth\User as Request;
-use App\Jobs\Auth\CreateInvitation;
-use App\Jobs\Auth\CreateUser;
-use App\Jobs\Auth\DeleteUser;
-use App\Jobs\Auth\UpdateUser;
-use App\Traits\Cloud;
-use App\Traits\Uploads;
+// use App\Jobs\Auth\CreateInvitation;
+// use App\Jobs\Auth\CreateUser;
+// use App\Jobs\Auth\DeleteUser;
+// use App\Jobs\Auth\UpdateUser;
+
+// use App\Traits\Cloud;
+// use App\Traits\Uploads;
+use APP\Models\User;
 use Illuminate\Http\Request as BaseRequest;
 
 class Users extends Controller
 {
-    use Cloud, Uploads;
-
+   // use Cloud, Uploads;
+    
     public function __construct()
     {
-        $this->middleware('permission:create-auth-users')->only('create', 'store', 'duplicate', 'import');
-        $this->middleware('permission:read-auth-users')->only('index', 'show', 'export');
-        $this->middleware('permission:update-auth-users')->only('enable', 'disable');
-        $this->middleware('permission:delete-auth-users')->only('destroy');
+        echo "ji";
+        // $this->middleware('permission:create-auth-users')->only('create', 'store', 'duplicate', 'import');
+        // $this->middleware('permission:read-auth-users')->only('index', 'show', 'export');
+        // $this->middleware('permission:update-auth-users')->only('enable', 'disable');
+        // $this->middleware('permission:delete-auth-users')->only('destroy');
 
-        $this->middleware('permission:read-auth-users|read-auth-profile')->only('edit');
-        $this->middleware('permission:update-auth-users|update-auth-profile')->only('update');
+        // $this->middleware('permission:read-auth-users|read-auth-profile')->only('edit');
+        // $this->middleware('permission:update-auth-users|update-auth-profile')->only('update');
+
     }
 
     /**
@@ -35,9 +39,11 @@ class Users extends Controller
      */
     public function index()
     {
-        $users = user_model_class()::with('companies', 'media', 'permissions', 'roles')->isNotCustomer()->collect();
+       
 
-        return $this->response('auth.users.index', compact('users'));
+       // $users = user_model_class()::with('companies', 'media', 'permissions', 'roles')->isNotCustomer()->collect();
+       $users = User::latest()->paginate(5);
+        return $this->response('admin.auth.users.index', compact('users'));
     }
 
     /**
