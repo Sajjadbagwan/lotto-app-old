@@ -3,7 +3,7 @@
 namespace App\View\Components;
 
 use App\Abstracts\View\Component;
-use App\Traits\Modules;
+//use App\Traits\Modules;
 use Illuminate\View\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 class EmptyPage extends Component
 {
-    use Modules;
+    //use Modules;
 
     /** @var string */
     public $alias;

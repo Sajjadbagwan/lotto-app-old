@@ -16,23 +16,24 @@
 
     <x-layouts.pwa.head />
 
-    <link rel="stylesheet" href="{{ asset('public/css/custom_loading.css?v=' . version('short')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/css/custom_loading.css') }}" type="text/css">
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('public/img/favicon.ico') }}" type="image/png">
 
     <!--Icons-->
-    <link rel="stylesheet" href="{{ asset('public/css/fonts/material-icons/style.css?v=' . version('short')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/css/fonts/material-icons/style.css') }}" type="text/css">
 
      <!-- Font -->
-    <link rel="stylesheet" href="{{ asset('public/vendor/quicksand/css/quicksand.css?v=' . version('short')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/vendor/quicksand/css/quicksand.css') }}" type="text/css">
 
     <!-- Css -->
-    <link rel="stylesheet" href="{{ asset('public/css//third_party/swiper-bundle.min.css?v=' . version('short')) }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css//third_party/vue-html-editor.css?v=' . version('short')) }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css/element.css?v=' . version('short')) }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css/app.css?v=' . version('short')) }}" type="text/css">
-
+    <link rel="stylesheet" href="{{ asset('public/css//third_party/swiper-bundle.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/css//third_party/vue-html-editor.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/css/element.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}" type="text/css">
+    @vite('resources/css/app.css')
+    
     @stack('css')
 
     @stack('stylesheet')
@@ -40,7 +41,7 @@
     @livewireStyles
 
     <script type="text/javascript"><!--
-        var url = '{{ url("/" . company_id()) }}';
+       
         var app_url = '{{ config("app.url") }}';
         var aka_currency = {!! !empty($currency) ? json_encode($currency) : 'false' !!};
         var all_currencies = {!! !empty($currencies) ? json_encode($currencies) : '[]' !!};

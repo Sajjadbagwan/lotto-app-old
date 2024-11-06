@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="{{ language()->direction() }}" lang="{{ app()->getLocale() }}">
+<html  lang="{{ app()->getLocale() }}">
     <x-layouts.admin.head>
         @if (! empty($metaTitle))
         <x-slot name="metaTitle">
@@ -80,10 +80,7 @@
                     </x-layouts.admin.header>
 
                     <x-layouts.admin.content>
-                        <livewire:notification.browser />
-
-                        <x-layouts.admin.notifications />
-
+                        
                         {!! $content !!}
                     </x-layouts.admin.content>
 

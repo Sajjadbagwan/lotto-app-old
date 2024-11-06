@@ -3,13 +3,13 @@
 namespace App\View\Components\Layouts\Modules;
 
 use App\Abstracts\View\Component;
-use App\Traits\Modules;
+//use App\Traits\Modules;
 use App\Utilities\Date;
 use Illuminate\Support\Facades\Cache;
 
 class Bar extends Component
 {
-    use Modules;
+    //use Modules;
 
     public $keyword;
 

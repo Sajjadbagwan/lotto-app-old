@@ -3,13 +3,13 @@
 namespace App\View\Components;
 
 use App\Abstracts\View\Component;
-use App\Traits\Modules;
+//use App\Traits\Modules;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Route;
 
 class Tips extends Component
 {
-    use Modules;
+    //use Modules;
 
     /** @var string */
     public $position;

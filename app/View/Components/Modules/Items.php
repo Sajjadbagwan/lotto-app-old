@@ -2,14 +2,14 @@
 
 namespace App\View\Components\Modules;
 
-use App\Traits\Modules;
+//use App\Traits\Modules;
 use App\Models\Module\Module;
 use App\Abstracts\View\Component;
 use Illuminate\Support\Facades\Route;
 
 class Items extends Component
 {
-    use Modules;
+    //use Modules;
 
     public $type;
 

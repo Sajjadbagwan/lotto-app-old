@@ -6,11 +6,11 @@ use Akaunting\Money\Currency as MoneyCurrency;
 use App\Abstracts\View\Component;
 use App\Models\Common\Media;
 use App\Models\Setting\Currency;
-use App\Traits\Modules;
+//use App\Traits\Modules;
 
 class Scripts extends Component
 {
-    use Modules;
+    //use Modules;
 
     public $company;
 

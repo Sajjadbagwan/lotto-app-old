@@ -3,12 +3,12 @@
 namespace App\View\Components\Layouts\Admin;
 
 use App\Abstracts\View\Component;
-use App\Traits\Modules;
+// //use App\Traits\Modules;
 use Illuminate\Support\Facades\Route;
 
 class Notifications extends Component
 {
-    use Modules;
+    // //use Modules;
 
     public $notifications;
 

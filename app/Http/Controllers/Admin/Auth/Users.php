@@ -42,8 +42,8 @@ class Users extends Controller
        
 
        // $users = user_model_class()::with('companies', 'media', 'permissions', 'roles')->isNotCustomer()->collect();
-       $users = User::latest()->paginate(5);
-        return $this->response('admin.auth.users.index', compact('users'));
+    //    $users = User::latest()->paginate(5);
+        return $this->response('admin.auth.users.index');
     }
 
     /**

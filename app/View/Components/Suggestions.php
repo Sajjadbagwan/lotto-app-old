@@ -3,14 +3,14 @@
 namespace App\View\Components;
 
 use App\Abstracts\View\Component;
-use App\Traits\Modules;
+//use App\Traits\Modules;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 class Suggestions extends Component
 {
-    use Modules;
+    //use Modules;
 
     /** @var objcet */
     public $suggestions;
