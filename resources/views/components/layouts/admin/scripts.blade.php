@@ -1,19 +1,19 @@
 <!-- Core -->
-<script src="{{ asset('public/vendor/js-cookie/js.cookie.js') }}"></script>
+<!-- <script src="{{ asset('public/vendor/js-cookie/js.cookie.js') }}"></script> -->
 
 
 
 @stack('scripts_start')
 
-@apexchartsScripts
-
 @stack('charts')
 
 <!-- <script type="text/javascript" src="{{ asset('public/akaunting-js/hotkeys.js') }}" defer></script> -->
-<script type="text/javascript" src="{{ asset('public/akaunting-js/generalAction.js') }}"></script>
-<script type="text/javascript" src="{{ asset('public/akaunting-js/popper.js') }}"></script>
+<!-- <script type="text/javascript" src="{{ asset('public/akaunting-js/generalAction.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/akaunting-js/popper.js') }}"></script> -->
 
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script> -->
 <script type="text/javascript">
+   
     "use strict";
 
     var Layout = (function() {
@@ -31,7 +31,7 @@
 
         //animation for notification icon
         if (document.querySelector('[data-menu="notifications-menu"]')) {
-            setTimeout(function() {
+             setTimeout(function() {
                 document.querySelector('[data-menu="notifications-menu"]').classList.remove("animate-vibrate");
             }, 6000);
         }

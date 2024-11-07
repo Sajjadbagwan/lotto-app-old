@@ -12,11 +12,11 @@
         </x-slot>
     </x-layouts.admin.head>
 
-    @mobile
-    <body class="bg-body">
-    @elsemobile
-    <body class="bg-body overflow-y-overlay">
-    @endmobile
+    <body  x-data="{ 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
+    x-init="
+         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
+    :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}" class="overflow-y-overlay">
 
         @stack('body_start')
 
@@ -24,9 +24,8 @@
 
         <!-- loading component will add this line -->
 
-        <div class="main-content xl:ltr:ml-64 xl:rtl:mr-64 transition-all ease-in-out" id="panel">
+        <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden" id="panel">
             <div id="main-body">
-                <div class="container">
                     <x-layouts.admin.header>
                         <x-slot name="title">
                             {!! ! empty($title->attributes->has('title')) ? $title->attributes->get('title') : $title !!}
@@ -85,7 +84,7 @@
                     </x-layouts.admin.content>
 
                     <x-layouts.admin.footer />
-                </div>
+               
             </div>
         </div>
 

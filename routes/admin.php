@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\Auth\Login;
 use App\Http\Controllers\Admin\Auth\Forgot;
 use App\Http\Controllers\Admin\Auth\Users;
+use App\Http\Controllers\Admin\DashboardController;
 
 
 
@@ -24,11 +25,14 @@ Route::group(['prefix' => 'auth'], function () {
     // Route::get('register/{token}', 'Auth\Register@create')->name('register');
     // Route::post('register', 'Auth\Register@store')->name('register.store');
 });
-//Route::middleware('auth')->group(function () {
+//Route::middleware('role:Super Admin')->group(function () {
+    Route::group(['middleware' => ['role:super_admin']], function () {    
+    Route::get('dashboard', [DashboardController::class,'index'])->name('dashboard');
+
     Route::get('users/index', [Users::class,'index'])->name('users.index');
     Route::get('users/create', [Users::class,'create'])->name('users.create');
     Route::post('users/store', [Users::class,'store'])->name('users.store');
-//});
+});
 
 
 

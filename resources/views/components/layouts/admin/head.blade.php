@@ -10,37 +10,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8; charset=ISO-8859-1"/>
 
-    <title>{!! ! empty($metaTitle) ? $metaTitle : $title !!} - @setting('company.name')</title>
+    <title>{!! ! empty($metaTitle) ? $metaTitle : $title !!}</title>
 
     <base href="{{ config('app.url') . '/' }}">
 
     <x-layouts.pwa.head />
 
-    <link rel="stylesheet" href="{{ asset('public/css/custom_loading.css') }}" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ asset('public/css/custom_loading.css') }}" type="text/css"> -->
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('public/img/favicon.ico') }}" type="image/png">
+    <!-- <link rel="icon" href="{{ asset('public/img/favicon.ico') }}" type="image/png"> -->
 
     <!--Icons-->
-    <link rel="stylesheet" href="{{ asset('public/css/fonts/material-icons/style.css') }}" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ asset('public/css/fonts/material-icons/style.css') }}" type="text/css"> -->
 
      <!-- Font -->
-    <link rel="stylesheet" href="{{ asset('public/vendor/quicksand/css/quicksand.css') }}" type="text/css">
+    <!-- <link rel="stylesheet" href="{{ asset('public/vendor/quicksand/css/quicksand.css') }}" type="text/css"> -->
 
-    <!-- Css -->
-    <link rel="stylesheet" href="{{ asset('public/css//third_party/swiper-bundle.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css//third_party/vue-html-editor.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css/element.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}" type="text/css">
-    @vite('resources/css/app.css')
+    
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     
     @stack('css')
 
     @stack('stylesheet')
 
     @livewireStyles
-
-    <script type="text/javascript"><!--
+    
+    
+    <script type="text/javascript">
+    <!--
        
         var app_url = '{{ config("app.url") }}';
         var aka_currency = {!! !empty($currency) ? json_encode($currency) : 'false' !!};

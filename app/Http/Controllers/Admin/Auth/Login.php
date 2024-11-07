@@ -38,6 +38,7 @@ class Login extends Controller
 
     public function store(Request $request)
     {
+
         // Attempt to login
         if (! auth()->attempt($request->only('email', 'password'), $request->get('remember', false))) {
             return response()->json([
@@ -54,6 +55,18 @@ class Login extends Controller
         auth()->login(auth()->user());
         // Get user object
         $user = auth()->user();
+        if (!$user->hasRole('super_admin')) {
+            auth()->logout();
+
+            return response()->json([
+                'status' => null,
+                'success' => false,
+                'error' => true,
+                'message' => trans('auth.failed'),
+                'data' => null,
+                'redirect' => null,
+            ]);
+        }
         // Check if user is enabled
         if (! $user) {
             $this->logout();
@@ -106,7 +119,7 @@ class Login extends Controller
         // }
 
         // Redirect to landing page if is user
-        $url = route('admin.users.index');
+        $url = route('admin.dashboard');
         return response()->json([
             'status' => null,
             'success' => true,

@@ -1,5 +1,5 @@
 @stack('content_start')
-<div id="app">
+<div id="app" class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
     @stack('content_content_start')
 
     {!! $slot !!}
