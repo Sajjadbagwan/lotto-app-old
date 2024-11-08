@@ -25,14 +25,12 @@ Route::group(['prefix' => 'auth'], function () {
     // Route::get('register/{token}', 'Auth\Register@create')->name('register');
     // Route::post('register', 'Auth\Register@store')->name('register.store');
 });
-//Route::middleware('role:Super Admin')->group(function () {
-    Route::group(['middleware' => ['role:super_admin']], function () {    
+//Route::middleware(['role:super_admin'])->group(function () {
     Route::get('dashboard', [DashboardController::class,'index'])->name('dashboard');
 
     Route::get('users/index', [Users::class,'index'])->name('users.index');
     Route::get('users/create', [Users::class,'create'])->name('users.create');
     Route::post('users/store', [Users::class,'store'])->name('users.store');
-});
-
+//});
 
 

@@ -38,9 +38,8 @@ class Login extends Controller
 
     public function store(Request $request)
     {
-
         // Attempt to login
-        if (! auth()->attempt($request->only('email', 'password'), $request->get('remember', false))) {
+        if (! Auth::attempt($request->only('email', 'password'), $request->get('remember', false))) {
             return response()->json([
                 'status' => null,
                 'success' => false,
@@ -52,11 +51,12 @@ class Login extends Controller
         }
        
         // Sign in user
-        auth()->login(auth()->user());
+        Auth::login(Auth::user());
         // Get user object
-        $user = auth()->user();
+        $user = Auth::user();
+        
         if (!$user->hasRole('super_admin')) {
-            auth()->logout();
+            Auth::logout();
 
             return response()->json([
                 'status' => null,
@@ -139,7 +139,7 @@ class Login extends Controller
 
     public function logout()
     {
-        auth()->logout();
+        Auth::logout();
 
         // Session destroy is required if stored in database
         // if (config('session.driver') == 'database') {

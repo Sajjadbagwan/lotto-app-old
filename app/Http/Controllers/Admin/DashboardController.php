@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
-    public function index() {
-        print_r(auth()->user());exit;
-        return view('admin.dashborad');
+     public function index() {
+        
+    return view('admin.dashborad');
     }
 }

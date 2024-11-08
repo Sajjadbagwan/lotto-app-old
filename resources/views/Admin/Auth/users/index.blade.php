@@ -19,7 +19,9 @@
         </div>
         <div class="grid grid-cols-1 gap-9">
             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-                <livewire:users-table />
+               
+               
+               @livewire('users-table')
             </div>
         </div>
         

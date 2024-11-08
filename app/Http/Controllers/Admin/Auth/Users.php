@@ -22,7 +22,6 @@ class Users extends Controller
     
     public function __construct()
     {
-        print_r(auth()->user());exit;
         // $this->middleware('permission:create-auth-users')->only('create', 'store', 'duplicate', 'import');
         // $this->middleware('permission:read-auth-users')->only('index', 'show', 'export');
         // $this->middleware('permission:update-auth-users')->only('enable', 'disable');
@@ -41,7 +40,6 @@ class Users extends Controller
     public function index()
     {
        
-        
         //$users = user_model_class()::with('permissions', 'roles')->isNotCustomer()->collect();
     //    $users = User::latest()->paginate(5);
         return $this->response('admin.auth.users.index');
